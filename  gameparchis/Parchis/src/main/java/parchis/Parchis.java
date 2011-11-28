@@ -2,6 +2,7 @@ package parchis;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @brief Representa una partida de Parchís.
@@ -12,7 +13,7 @@ import java.util.Iterator;
  */
 public class Parchis {
 	
-	private ArrayList<Jugador> jugadores;
+	private List<Jugador> jugadores;
 	private Tablero tablero;
 	private Iterator<Jugador> itj;
 	
