@@ -1,7 +1,7 @@
 package parchis;
 
 
-class Main {
+public class Main {
 
 	public static void main(String[] args) {
 		Parchis parchis = new Parchis();
