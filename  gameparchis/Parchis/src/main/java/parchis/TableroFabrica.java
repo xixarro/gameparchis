@@ -222,8 +222,9 @@ public class TableroFabrica {
 			} else if (i == 5 || i == 22 || i == 39 || i == 56) {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.PUNTO_PARTIDA,
 						i);
-			} else
-				carril[i - 1] = new Casilla(Casilla.TipoCasilla.NORMAL, i);
+			} else{
+				carril[i - 1] = new Casilla(Casilla.TipoCasilla.NORMAL, i);				
+			}
 		}
 
 		for (int i = 1; i < carril.length; i++) {
