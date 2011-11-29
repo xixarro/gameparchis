@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2011-11-28T03:24:09.674">
+<pmd version="4.2.5" timestamp="2011-11-29T14:09:00.599">
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Parchis.java">
-<violation beginline="15" endline="15" begincolumn="17" endcolumn="34" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Parchis" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="81" endline="82" begincolumn="25" endcolumn="48" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="jugar" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="82" endline="82" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="jugar" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
 <violation beginline="147" endline="147" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="fin" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
@@ -21,58 +18,11 @@ System.out.print is used
 </violation>
 </file>
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Tablero.java">
-<violation beginline="160" endline="160" begincolumn="40" endcolumn="55" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAmarillas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="168" endline="168" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAzules" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="176" endline="176" begincolumn="36" endcolumn="51" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasRojas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="184" endline="184" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasVerdes" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="220" endline="220" begincolumn="40" endcolumn="64" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAmarillo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
-The user-supplied array 'pasilloAmarillo' is stored directly.
-</violation>
-<violation beginline="224" endline="224" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAzul" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
-The user-supplied array 'pasilloAzul' is stored directly.
-</violation>
-<violation beginline="228" endline="228" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloRojo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
-The user-supplied array 'pasilloRojo' is stored directly.
-</violation>
-<violation beginline="232" endline="232" begincolumn="37" endcolumn="58" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloVerde" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
-The user-supplied array 'pasilloVerde' is stored directly.
-</violation>
-<violation beginline="236" endline="236" begincolumn="31" endcolumn="46" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setCarril" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
-The user-supplied array 'carril' is stored directly.
-</violation>
-<violation beginline="357" endline="363" begincolumn="49" endcolumn="49" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
-These nested if statements could be combined
-</violation>
-<violation beginline="358" endline="361" begincolumn="57" endcolumn="57" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
-These nested if statements could be combined
-</violation>
-<violation beginline="359" endline="359" begincolumn="65" endcolumn="82" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="358" endline="358" begincolumn="49" endcolumn="66" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
-<violation beginline="404" endline="404" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="400" endline="400" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
-</violation>
-</file>
-<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\TableroFabrica.java">
-<violation beginline="24" endline="24" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="25" endline="25" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="26" endline="26" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="27" endline="27" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
 </file>
 </pmd>

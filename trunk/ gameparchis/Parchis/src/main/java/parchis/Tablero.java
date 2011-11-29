@@ -1,8 +1,6 @@
 package parchis;
 
-import java.util.ArrayList;
 import java.util.List;
-
 import parchis.Casilla.TipoCasilla;
 
 /**
@@ -15,11 +13,12 @@ import parchis.Casilla.TipoCasilla;
 
 public class Tablero {
 
+	static final int CAP_FICHAS_CASILLA_META = 4;
+	static final int  CAP_FICHAS_CASILLA= 2;
+	static final int  TIRADA_COMER= 20;
+
 	private Casilla carril[];
-	/**
-	 * < Atributo representa el carril principal de Casillas consecutivas hasta
-	 * la meta
-	 */
+
 	private Casilla pasilloAmarillo[];
 	private Casilla pasilloAzul[];
 	private Casilla pasilloRojo[];
@@ -157,7 +156,7 @@ public class Tablero {
 		return fichasAmarillas;
 	}
 
-	public void setFichasAmarillas(ArrayList<Ficha> fichasAmarillas) {
+	public void setFichasAmarillas(List<Ficha> fichasAmarillas) {
 		this.fichasAmarillas = fichasAmarillas;
 	}
 
@@ -165,7 +164,7 @@ public class Tablero {
 		return fichasAzules;
 	}
 
-	public void setFichasAzules(ArrayList<Ficha> fichasAzules) {
+	public void setFichasAzules(List<Ficha> fichasAzules) {
 		this.fichasAzules = fichasAzules;
 	}
 
@@ -173,7 +172,7 @@ public class Tablero {
 		return fichasRojas;
 	}
 
-	public void setFichasRojas(ArrayList<Ficha> fichasRojas) {
+	public void setFichasRojas(List<Ficha> fichasRojas) {
 		this.fichasRojas = fichasRojas;
 	}
 
@@ -181,7 +180,7 @@ public class Tablero {
 		return fichasVerdes;
 	}
 
-	public void setFichasVerdes(ArrayList<Ficha> fichasVerdes) {
+	public void setFichasVerdes(List<Ficha> fichasVerdes) {
 		this.fichasVerdes = fichasVerdes;
 	}
 
@@ -218,24 +217,24 @@ public class Tablero {
 	}
 
 	public void setPasilloAmarillo(Casilla[] pasilloAmarillo) {
-		this.pasilloAmarillo = pasilloAmarillo;
+		this.pasilloAmarillo = pasilloAmarillo.clone();
 	}
 
 	public void setPasilloAzul(Casilla[] pasilloAzul) {
-		this.pasilloAzul = pasilloAzul;
+		this.pasilloAzul = pasilloAzul.clone();
 	}
 
 	public void setPasilloRojo(Casilla[] pasilloRojo) {
-		this.pasilloRojo = pasilloRojo;
+		this.pasilloRojo = pasilloRojo.clone();
 	}
 
 	public void setPasilloVerde(Casilla[] pasilloVerde) {
-		this.pasilloVerde = pasilloVerde;
+		this.pasilloVerde = pasilloVerde.clone();
 	}
 
-	public void setCarril(Casilla[] carril) {
-		this.carril = carril;
-	}
+	 public void setCarril(Casilla[] carril) {
+	 this.carril = carril.clone();
+	 }
 
 	public void ponerfichaEnPosicion(Ficha ficha, int posicion) {
 
@@ -331,16 +330,16 @@ public class Tablero {
 
 	public boolean cabeEnDestino(Ficha ficha, int tirada) {
 
-		boolean b = false;
+		boolean cabe = false;
 
 		Casilla casillaDestino = calculaDestino(ficha, tirada);
 
 		if (casillaDestino.getTipoCasilla() == TipoCasilla.META) {
-			b = casillaDestino.getFichas().size() < 4;
+			cabe = casillaDestino.getFichas().size() < CAP_FICHAS_CASILLA_META;
 		} else {
-			b = casillaDestino.getFichas().size() < 2;
+			cabe = casillaDestino.getFichas().size() < 2;
 		}
-		return b;
+		return cabe;
 	}
 
 	public Ficha elegirFichaDesplazable(Jugador jugador, int tirada) {
@@ -353,14 +352,11 @@ public class Tablero {
 			for (Ficha ficha : fichas) {
 				if (!ficha.estaEnCasillaSalida() && !ficha.estaEnCasillaMeta()) {
 					Casilla casillaDestino = calculaDestino(ficha, tirada);
-					if (casillaDestino != null) {
-						if (!tienePuentesEnMedio(ficha, tirada)) {
-							if (cabeEnDestino(ficha, tirada)) {
-								System.out.println(ficha.toString());
-								f = ficha;
-							}
-
-						}
+					if (casillaDestino != null
+							&& !tienePuentesEnMedio(ficha, tirada)
+							&& cabeEnDestino(ficha, tirada)) {
+						System.out.println(ficha.toString());
+						f = ficha;
 					}
 				}
 			}
@@ -372,13 +368,13 @@ public class Tablero {
 
 	public void comer(Ficha ficha) {
 		Casilla casilla = ficha.getPosicion();
-		Ficha fichaCompañera = null;
+		Ficha fichaCompanera = null;
 		for (Ficha fichaCasilla : casilla.getFichas()) {
 			if (fichaCasilla.getColorFicha() != ficha.getColorFicha()) {
-				fichaCompañera = fichaCasilla;
+				fichaCompanera = fichaCasilla;
 			}
 		}
-		moverFichaACasa(fichaCompañera);
+		moverFichaACasa(fichaCompanera);
 	}
 
 	public void moverFicha(Ficha ficha, int tirada) {
@@ -406,9 +402,11 @@ public class Tablero {
 			moverFicha(ficha, tirada);
 			if (ficha.come()) {
 				comer(ficha);
-				eligeFichaYMueve(jugador, 20);
+				eligeFichaYMueve(jugador, TIRADA_COMER);
 			}
 		}
 
 	}
+
+	
 }

@@ -1,32 +1,42 @@
 package parchis;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import parchis.Casilla.TipoCasilla;
 
 public class TableroFabrica {
-	Casilla carril[];
+	private Casilla carril[];
+
+	private Casilla pasilloAmarillo[];
+	private Casilla pasilloAzul[];
+	private Casilla pasilloRojo[];
+	private Casilla pasilloVerde[];
+
+	private Casilla salidaAmarilla;
+	private Casilla salidaAzul;
+	private Casilla salidaRoja;
+	private Casilla salidaVerde;
+
+	private Casilla metaAmarilla;
+	private Casilla metaAzul;
+	private Casilla metaRoja;
+	private Casilla metaVerde;
+
+	private List<Ficha> fichasAm;
+	private List<Ficha> fichasAz;
+	private List<Ficha> fichasR;
+	private List<Ficha> fichasV;
+
 	
-	Casilla pasilloAmarillo[];
-	Casilla pasilloAzul[];
-	Casilla pasilloRojo[];
-	Casilla pasilloVerde[];
+	/**
+	 * TODO estas costantes son privates??
+	 * cada vez q pongo un numero tengo que poner estas costantes?
+	 */
+	static final int POSICION_CASILLA_META = 99;
+	static final int LENGTH_PASILLO = 7;
 
-	Casilla salidaAmarilla;
-	Casilla salidaAzul;
-	Casilla salidaRoja;
-	Casilla salidaVerde;
-
-	Casilla metaAmarilla;
-	Casilla metaAzul;
-	Casilla metaRoja;
-	Casilla metaVerde;
-
-	ArrayList<Ficha> fichasAm;
-	ArrayList<Ficha> fichasAz;
-	ArrayList<Ficha> fichasR;
-	ArrayList<Ficha> fichasV;
-
-	Color amarillo = new Color("amarillo");
+	private static final int LENGTH_CARRIL =68 ;
 
 	public TableroFabrica() {
 
@@ -68,13 +78,15 @@ public class TableroFabrica {
 	}
 
 	private void createMetas() {
-		metaAmarilla = new Casilla(TipoCasilla.META, 99);
-		metaAzul = new Casilla(TipoCasilla.META, 99);
-		metaRoja = new Casilla(TipoCasilla.META, 99);
-		metaVerde = new Casilla(TipoCasilla.META, 99);
+		metaAmarilla = new Casilla(TipoCasilla.META, POSICION_CASILLA_META);
+		metaAzul = new Casilla(TipoCasilla.META, POSICION_CASILLA_META);
+		metaRoja = new Casilla(TipoCasilla.META, POSICION_CASILLA_META);
+		metaVerde = new Casilla(TipoCasilla.META, POSICION_CASILLA_META);
 	}
 
 	private void createFichas() {
+
+		Color amarillo = new Color("amarillo");
 
 		fichasAm = new ArrayList<Ficha>(4);
 
@@ -201,17 +213,17 @@ public class TableroFabrica {
 	}
 
 	private void createEstructuras() {
-		carril = new Casilla[68];
-		pasilloAmarillo = new Casilla[7];
-		pasilloAzul = new Casilla[7];
-		pasilloVerde = new Casilla[7];
-		pasilloRojo = new Casilla[7];
+		carril = new Casilla[LENGTH_CARRIL];
+		pasilloAmarillo = new Casilla[LENGTH_PASILLO];
+		pasilloAzul = new Casilla[LENGTH_PASILLO];
+		pasilloVerde = new Casilla[LENGTH_PASILLO];
+		pasilloRojo = new Casilla[LENGTH_PASILLO];
 
 	}
 
 	private void createCarril() {
 
-		carril = new Casilla[68];
+	//	carril = new Casilla[68];
 
 		for (int i = 1; i <= carril.length; i++) {
 
@@ -222,8 +234,8 @@ public class TableroFabrica {
 			} else if (i == 5 || i == 22 || i == 39 || i == 56) {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.PUNTO_PARTIDA,
 						i);
-			} else{
-				carril[i - 1] = new Casilla(Casilla.TipoCasilla.NORMAL, i);				
+			} else {
+				carril[i - 1] = new Casilla(Casilla.TipoCasilla.NORMAL, i);
 			}
 		}
 

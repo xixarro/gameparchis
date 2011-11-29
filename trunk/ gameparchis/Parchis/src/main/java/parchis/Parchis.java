@@ -79,8 +79,7 @@ public class Parchis {
 		
 		
 		while (!fin()) {
-			System.out
-					.println("Truno del Jugador: " + jugadorActual.getColor());
+			System.out.println("Truno del Jugador: " + jugadorActual.getColor());
 			tirada = new Dado().tirarDado();
 			switch (tirada) {
 			case 5:
