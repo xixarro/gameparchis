@@ -215,7 +215,11 @@ public class Tablero {
 	public void setSalidaVerde(Casilla salidaVerde) {
 		this.salidaVerde = salidaVerde;
 	}
-
+	
+	/**
+	 * TODO todos settes hay que hacerle el clone??
+	 * @param pasilloAmarillo
+	 */
 	public void setPasilloAmarillo(Casilla[] pasilloAmarillo) {
 		this.pasilloAmarillo = pasilloAmarillo.clone();
 	}
