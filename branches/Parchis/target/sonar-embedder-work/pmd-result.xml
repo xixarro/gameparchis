@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2011-11-29T14:09:00.599">
+<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Parchis.java">
+<violation beginline="82" endline="82" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="jugar" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="147" endline="147" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="fin" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="149" endline="149" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="fin" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="151" endline="151" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="fin" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="153" endline="153" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Parchis" method="fin" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+</file>
+<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Tablero.java">
+<violation beginline="358" endline="358" begincolumn="49" endcolumn="66" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="400" endline="400" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+</file>
+</pmd>

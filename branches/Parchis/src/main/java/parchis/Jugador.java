@@ -1,0 +1,197 @@
+package parchis;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ * @brief Esta clase representa a un Jugador.
+ * 
+ *        La Clase Jugador es un ArrayList<Ficha> que contendrá las fichas de
+ *        las que dispone el Jugador
+ * 
+ */
+
+public class Jugador {
+
+	private List<Ficha> fichas;
+
+	/** < ArrayList<Fichas> que contiene las fichas del jugador */
+
+	/**
+	 * @brief Constructor
+	 * 
+	 * @param list
+	 *            ArrayList de las Fichas con las que se crea el Jugador
+	 */
+	public Jugador(List<Ficha> list) {
+		super();
+		this.fichas = new ArrayList<Ficha>();
+		this.fichas.addAll(list);
+	}
+
+	@Override
+	public String toString() {
+		return "Jugador [fichas=" + fichas + ", getColor()=" + getColor() + "]";
+	}
+
+	/**
+	 * @brief Observador
+	 * @return Las Fichas del Jugador
+	 */
+	public List<Ficha> getFichas() {
+		return fichas;
+	}
+
+	/**
+	 * @brief Calcula el color con el que juega el jugador
+	 * 
+	 *        Calcula el color de la ficha con la que juega el Jugador a partir
+	 *        de una ficha de las que dispone.
+	 * @return el color de la ficha
+	 * @see Ficha.getColorFicha()
+	 */
+	public Color getColor() {
+		return this.fichas.get(0).getColorFicha();
+	}
+
+	/**
+	 * @brief Devuelve una Ficha de la Casilla de Salida.
+	 * 
+	 *        Este método busca si alguna Ficha del Jugador esta en la casilla
+	 *        de salida, si encuentra una te la devuelve, si no encuentra
+	 *        ninguna devuelve null
+	 * @return una Ficha de la casilla de salida. Null si no hay
+	 * @see Ficha.estaEnCasillaSalida()
+	 */
+	public Ficha getFichaEnSalida() {
+		Ficha result = null;
+		boolean isFound = false;
+		Iterator<Ficha> itf = fichas.iterator();
+		while (itf.hasNext() && !isFound) {
+			Ficha actual = itf.next();
+			if (actual.estaEnCasillaSalida()) {
+				result = actual;
+				isFound = true;
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * @brief Calcula si todas las Fichas están en la Casilla de salida.
+	 * 
+	 *        Recorre todas las Fichas del Jugador, si alguna no esta en la
+	 *        Casilla de Salida devuelve null.
+	 * @return true si todas las fichas del Jugador están en la Casilla de
+	 *         salida.
+	 */
+	public boolean todasEnSalida() {
+		boolean allInExit = true;
+		Iterator<Ficha> itf = fichas.iterator();
+		while (itf.hasNext() & allInExit) {
+			Ficha actual = itf.next();
+			if (!actual.estaEnCasillaSalida()) {
+				allInExit = false;
+			}
+		}
+		return allInExit;
+	}
+
+	/**
+	 * @brief Calcula si tiene dos fichas en la casilla de punto de partida.
+	 * 
+	 *        Este método pregunta el color de la ficha que tiene el Jugador y
+	 *        Según el color va a la posición de la casilla de punto de partida
+	 *        correspondiente.
+	 * @return true si tiene dos de sus fichas en su casilla de salida.
+	 */
+
+	private static final int IDAMARILLA = 5;
+	private static final int IDAZUL = 22;
+	private static final int IDROJA = 39;
+	private static final int IDVERDE = 56;
+
+	public boolean tieneDosFichasEnPP() {
+		boolean tieneDosFichasEnPP = false;
+		int numeroDeFichas = 0;
+		int idCasillaInicial = 0;
+
+		Color color = this.getColor();
+		if (color.equals(Tablero.AMARILLO)) {
+			idCasillaInicial = IDAMARILLA;
+		} else if (color.equals(Tablero.AZUL)) {
+			idCasillaInicial = IDAZUL;
+		} else if (color.equals(Tablero.ROJO)) {
+			idCasillaInicial = IDROJA;
+		} else if (color.equals(Tablero.VERDE)) {
+			idCasillaInicial = IDVERDE;
+		}
+		for (Ficha ficha : fichas) {
+			if (ficha.getNumeroPosicion() == idCasillaInicial) {
+				numeroDeFichas++;
+			}
+			if (numeroDeFichas == 2) {
+				tieneDosFichasEnPP = true;
+			}
+		}
+		return tieneDosFichasEnPP;
+	}
+
+	/**
+	 * @brief Calcula el numero de fichas que están en la Casilla de salida.
+	 * 
+	 *        Recorre las fichas del jugador preguntando si la posición de la
+	 *        casilla donde se encuentra la ficha es 0.
+	 * @return El numero de fichas que están en la Casilla de Salida.
+	 */
+	public int getNumeroDeFichasEnSalida() {
+		int i = 0;
+		for (Ficha ficha : fichas) {
+			if (ficha.getNumeroPosicion() == 0) {
+				i++;
+			}
+		}
+		return i;
+	}
+
+	/**
+	 * @brief Calcula si el Jugador tiene fichas en casa.
+	 * 
+	 *        Recorre las Fichas del Jugador preguntado si tiene alguna Ficha en
+	 *        la Casilla de Salida, si encuentra una la devuelve true.
+	 * 
+	 * @return true si al menos una Ficha esta en Casilla de Salida.
+	 */
+
+	public boolean tieneFichaEnCasillaSalida() {
+		boolean oneInExit = false;
+		Iterator<Ficha> itf = fichas.iterator();
+		while (itf.hasNext() & !oneInExit) {
+			Ficha actual = itf.next();
+			if (!actual.estaEnCasillaSalida()) {
+				oneInExit = true;
+			}
+		}
+		return oneInExit;
+	}
+
+	/**
+	 * @brief Elige una Ficha no salvada.
+	 * 
+	 *        Recorre las Fichas del Jugador comprobando si están salvadas si
+	 *        encuentra una, la devuelve.
+	 * 
+	 * @return La una Ficha que no está salvada, si no hay devuelve null.
+	 */
+	public Ficha elegirFichaNoSalvada() {
+		Ficha fichaNoSalvada = null;
+		for (Ficha ficha : this.fichas) {
+			if (!ficha.estaSalvada()) {
+				fichaNoSalvada = ficha;
+			}
+		}
+		return fichaNoSalvada;
+	}
+
+}
