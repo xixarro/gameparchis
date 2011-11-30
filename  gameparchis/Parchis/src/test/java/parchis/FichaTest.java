@@ -159,7 +159,7 @@ public class FichaTest {
 		assertFalse(ficha.estaEnCasillaEntradaMeta());
 
 	}
-
+	@Test
 	public void testSiguienteCasilla() {
 		Casilla casillaSiguienteMock = mock(Casilla.class);
 		when(casillaMock.getCasillaSiguiente())
@@ -167,7 +167,7 @@ public class FichaTest {
 
 		assertEquals(casillaSiguienteMock, ficha.siguienteCasilla());
 	}
-
+	@Test
 	public void testGetNumeroPosicion() {
 		when(casillaMock.getPosicion()).thenReturn(5);
 
