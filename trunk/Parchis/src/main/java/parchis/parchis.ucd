@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1896,2085" id="parchis" metadata="uml2-1.0" initialized="true" scrolledY="421" tag="1000" key="32303037303533312D3130303020506172636869732F4573746562616E">
+  <children xsi:type="editmodel:ClassEditModel" name="Ficha" location="515,50" size="177,366" id="parchis/Ficha" runTimeClassModel="estaEnCasillaSalida(),siguienteCasilla(),colorFicha,getNumeroPosicion(),estaEnCasillaMeta(),getPosicion(),getColorFicha(),setPosicion(Lparchis.Casilla;),toString(),Ficha(Lparchis.Color;),come(),estaEnCasillaEntradaMeta(),estaSalvada(),posicion">
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="colorFicha" id="parchis/Ficha#colorFicha"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="posicion" id="parchis/Ficha#posicion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,144">
+      <children xsi:type="editmodel:MethodEditModel" name="getNumeroPosicion" id="parchis/Ficha#getNumeroPosicion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="siguienteCasilla" id="parchis/Ficha#siguienteCasilla()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estaEnCasillaSalida" id="parchis/Ficha#estaEnCasillaSalida()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estaSalvada" id="parchis/Ficha#estaSalvada()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estaEnCasillaMeta" id="parchis/Ficha#estaEnCasillaMeta()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="estaEnCasillaEntradaMeta" id="parchis/Ficha#estaEnCasillaEntradaMeta()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="come" id="parchis/Ficha#come()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Ficha" id="parchis/Ficha#Ficha(Lparchis.Color;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="111,127"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Dado" location="645,525" size="97,67" id="parchis/Dado" runTimeClassModel="tirarDado()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,18">
+      <children xsi:type="editmodel:MethodEditModel" name="tirarDado" id="parchis/Dado#tirarDado()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="TableroFabrica" location="742,50" size="178,409" id="parchis/TableroFabrica" runTimeClassModel="createTablero(),pasilloRojo,TableroFabrica(),fichasAm,metaRoja,salidaAzul,salidaAmarilla,metaAmarilla,fichasR,fichasV,salidaVerde,fichasAz,carril,pasilloAmarillo,amarillo,pasilloAzul,salidaRoja,pasilloVerde,metaVerde,metaAzul">
+    <children xsi:type="editmodel:CompartmentEditModel" size="155,324">
+      <children xsi:type="editmodel:AttributeEditModel" name="carril" id="parchis/TableroFabrica#carril"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasAm" id="parchis/TableroFabrica#fichasAm"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasAz" id="parchis/TableroFabrica#fichasAz"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasR" id="parchis/TableroFabrica#fichasR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasV" id="parchis/TableroFabrica#fichasV"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaAmarilla" id="parchis/TableroFabrica#metaAmarilla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaAzul" id="parchis/TableroFabrica#metaAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaRoja" id="parchis/TableroFabrica#metaRoja"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaVerde" id="parchis/TableroFabrica#metaVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloAmarillo" id="parchis/TableroFabrica#pasilloAmarillo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloAzul" id="parchis/TableroFabrica#pasilloAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloRojo" id="parchis/TableroFabrica#pasilloRojo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloVerde" id="parchis/TableroFabrica#pasilloVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaAmarilla" id="parchis/TableroFabrica#salidaAmarilla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaAzul" id="parchis/TableroFabrica#salidaAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaRoja" id="parchis/TableroFabrica#salidaRoja"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaVerde" id="parchis/TableroFabrica#salidaVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="amarillo" id="parchis/TableroFabrica#amarillo"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,36">
+      <children xsi:type="editmodel:MethodEditModel" name="TableroFabrica" id="parchis/TableroFabrica#TableroFabrica()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createTablero" id="parchis/TableroFabrica#createTablero()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Parchis" location="345,558" size="191,265" id="parchis/Parchis" runTimeClassModel="Parchis(),jugar(),addJugador()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="jugadorActual" id="parchis/Parchis#jugadorActual"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="jugadores" id="parchis/Parchis#jugadores"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tablero" id="parchis/Parchis#tablero"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numeroDeSeis" id="parchis/Parchis#numeroDeSeis"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tirada" id="parchis/Parchis#tirada"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,126">
+      <children xsi:type="editmodel:MethodEditModel" name="jugar" id="parchis/Parchis#jugar()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="fin" id="parchis/Parchis#fin()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Parchis" id="parchis/Parchis#Parchis()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="siguienteJugador" id="parchis/Parchis#siguienteJugador()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="esSeis" id="parchis/Parchis#esSeis()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addJugador" id="parchis/Parchis#addJugador()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="esCinco" id="parchis/Parchis#esCinco()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Jugador" location="90,660" size="191,175" id="parchis/Jugador" runTimeClassModel="getNumeroDeFichasEnSalida(),fichas,elegirFichaNoSalvada(),Jugador(Ljava.util.ArrayList;),getColor(),tieneDosFichasEnPP(),TodasEnSalida(),getFichas(),toString(),tieneFichaEnCasillaSalida(),getFichaEnSalida()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="fichas" id="parchis/Jugador#fichas"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="168,108">
+      <children xsi:type="editmodel:MethodEditModel" name="Jugador" id="parchis/Jugador#Jugador(Ljava.util.ArrayList;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="TodasEnSalida" id="parchis/Jugador#TodasEnSalida()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tieneDosFichasEnPP" id="parchis/Jugador#tieneDosFichasEnPP()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNumeroDeFichasEnSalida" id="parchis/Jugador#getNumeroDeFichasEnSalida()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tieneFichaEnCasillaSalida" id="parchis/Jugador#tieneFichaEnCasillaSalida()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="elegirFichaNoSalvada" id="parchis/Jugador#elegirFichaNoSalvada()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Tablero" location="50,50" size="212,679" id="parchis/Tablero" runTimeClassModel="moverFicha(Lparchis.Ficha;I),setPasilloAzul([Lparchis.Casilla;),rOJO,metaAmarilla,tienePuentesEnMedio(Lparchis.Ficha;I),carril,pasilloAmarillo,setFichasAzules(Ljava.util.ArrayList;),calculaDestino(Lparchis.Ficha;I),cabeEnDestino(Lparchis.Ficha;I),getMetaRoja(),moverFichaACasa(Lparchis.Ficha;),pasilloAzul,setFichasVerdes(Ljava.util.ArrayList;),vERDE,getMetaAmarilla(),pasilloVerde,metaAzul,setSalidaVerde(Lparchis.Casilla;),aZUL,setPasilloAmarillo([Lparchis.Casilla;),elegirFichaDesplazable(Lparchis.Jugador;I),metaRoja,eligeFichaYMueve(Lparchis.Jugador;I),setFichasAmarillas(Ljava.util.ArrayList;),getFichasRojas(),setMetaVerde(Lparchis.Casilla;),comer(Lparchis.Ficha;),getFichasVerdes(),getSalidaRoja(),setSalidaAmarilla(Lparchis.Casilla;),metaVerde,setSalidaRoja(Lparchis.Casilla;),pasilloRojo,ponerfichaEnMeta(Lparchis.Ficha;),setPasilloRojo([Lparchis.Casilla;),salidaAzul,eligeFichaYMueveACasa(Lparchis.Jugador;I),fichasVerdes,getSalidaVerde(),setCarril([Lparchis.Casilla;),getFichasAmarillas(),getSalidaAmarilla(),setSalidaAzul(Lparchis.Casilla;),colocarUnaFichaEnPuntoPartida(Lparchis.Jugador;),fichasRojas,setMetaAzul(Lparchis.Casilla;),aMARILLO,fichasAzules,getSiguienteCasilla(Lparchis.Ficha;),fichasAmarillas,salidaAmarilla,colocarDosFichasEnPuntoPartida(Lparchis.Jugador;),getMetaAzul(),setFichasRojas(Ljava.util.ArrayList;),salidaVerde,getSalidaAzul(),getMetaVerde(),setMetaRoja(Lparchis.Casilla;),setPasilloVerde([Lparchis.Casilla;),setMetaAmarilla(Lparchis.Casilla;),salidaRoja,ponerfichaEnPosicion(Lparchis.Ficha;I),getFichasAzules()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,378">
+      <children xsi:type="editmodel:AttributeEditModel" name="carril" id="parchis/Tablero#carril"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloAmarillo" id="parchis/Tablero#pasilloAmarillo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloAzul" id="parchis/Tablero#pasilloAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloRojo" id="parchis/Tablero#pasilloRojo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pasilloVerde" id="parchis/Tablero#pasilloVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaAmarilla" id="parchis/Tablero#salidaAmarilla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaAzul" id="parchis/Tablero#salidaAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaRoja" id="parchis/Tablero#salidaRoja"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salidaVerde" id="parchis/Tablero#salidaVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaAmarilla" id="parchis/Tablero#metaAmarilla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaAzul" id="parchis/Tablero#metaAzul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaRoja" id="parchis/Tablero#metaRoja"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="metaVerde" id="parchis/Tablero#metaVerde"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasAmarillas" id="parchis/Tablero#fichasAmarillas"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasAzules" id="parchis/Tablero#fichasAzules"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasRojas" id="parchis/Tablero#fichasRojas"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fichasVerdes" id="parchis/Tablero#fichasVerdes"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aZUL" id="parchis/Tablero#aZUL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rOJO" id="parchis/Tablero#rOJO"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="vERDE" id="parchis/Tablero#vERDE"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aMARILLO" id="parchis/Tablero#aMARILLO"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="189,252">
+      <children xsi:type="editmodel:MethodEditModel" name="calculaDestino" id="parchis/Tablero#calculaDestino(Lparchis.Ficha;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSiguienteCasilla" id="parchis/Tablero#getSiguienteCasilla(Lparchis.Ficha;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ponerfichaEnPosicion" id="parchis/Tablero#ponerfichaEnPosicion(Lparchis.Ficha;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="colocarDosFichasEnPuntoPartida" id="parchis/Tablero#colocarDosFichasEnPuntoPartida(Lparchis.Jugador;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ponerfichaEnMeta" id="parchis/Tablero#ponerfichaEnMeta(Lparchis.Ficha;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="colocarUnaFichaEnPuntoPartida" id="parchis/Tablero#colocarUnaFichaEnPuntoPartida(Lparchis.Jugador;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="moverFichaACasa" id="parchis/Tablero#moverFichaACasa(Lparchis.Ficha;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tienePuentesEnMedio" id="parchis/Tablero#tienePuentesEnMedio(Lparchis.Ficha;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cabeEnDestino" id="parchis/Tablero#cabeEnDestino(Lparchis.Ficha;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="elegirFichaDesplazable" id="parchis/Tablero#elegirFichaDesplazable(Lparchis.Jugador;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="comer" id="parchis/Tablero#comer(Lparchis.Ficha;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="moverFicha" id="parchis/Tablero#moverFicha(Lparchis.Ficha;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="eligeFichaYMueve" id="parchis/Tablero#eligeFichaYMueve(Lparchis.Jugador;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="eligeFichaYMueveACasa" id="parchis/Tablero#eligeFichaYMueveACasa(Lparchis.Jugador;I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Casilla" location="312,50" size="153,402" id="parchis/Casilla" runTimeClassModel="setFichas(Ljava.util.List;),getTipoCasilla(),parchis.Casilla.TipoCasilla,getPosicion(),siguientePosicion(),Casilla(Lparchis.Casilla.TipoCasilla;I),setCasillaSiguiente(Lparchis.Casilla;),toString(),fichas,tipoCasilla,esPuente(),getCasillaSiguiente(),casillaSiguiente,posicion,getFichas(),ponFicha(Lparchis.Ficha;),sacarFicha(Lparchis.Ficha;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="fichas" id="parchis/Casilla#fichas"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tipoCasilla" id="parchis/Casilla#tipoCasilla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="casillaSiguiente" id="parchis/Casilla#casillaSiguiente"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="posicion" id="parchis/Casilla#posicion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,108">
+      <children xsi:type="editmodel:MethodEditModel" name="siguientePosicion" id="parchis/Casilla#siguientePosicion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Casilla" id="parchis/Casilla#Casilla(Lparchis.Casilla.TipoCasilla;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCasillaSiguiente" id="parchis/Casilla#getCasillaSiguiente()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="esPuente" id="parchis/Casilla#esPuente()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ponFicha" id="parchis/Casilla#ponFicha(Lparchis.Ficha;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sacarFicha" id="parchis/Casilla#sacarFicha(Lparchis.Ficha;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,163">
+      <children xsi:type="editmodel:EnumerationEditModel" name="TipoCasilla" size="125,161" id="parchis/Casilla$TipoCasilla" runTimeClassModel="META%,PASILLO%,SEGURO%,PUNTO_PARTIDA%,ENTRADA_META%,NORMAL%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="102,108">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PASILLO" id="parchis/Casilla$TipoCasilla#PASILLO%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PUNTO_PARTIDA" id="parchis/Casilla$TipoCasilla#PUNTO_PARTIDA%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="ENTRADA_META" id="parchis/Casilla$TipoCasilla#ENTRADA_META%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="META" id="parchis/Casilla$TipoCasilla#META%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="NORMAL" id="parchis/Casilla$TipoCasilla#NORMAL%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="SEGURO" id="parchis/Casilla$TipoCasilla#SEGURO%"/>
+        </children>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
