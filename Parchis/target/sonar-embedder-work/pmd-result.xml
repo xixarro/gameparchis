@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2011-12-04T04:05:20.861">
+<pmd version="4.2.5" timestamp="2011-12-04T04:36:44.076">
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Parchis.java">
 <violation beginline="15" endline="15" begincolumn="17" endcolumn="34" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Parchis" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
@@ -41,23 +41,6 @@ System.out.print is used
 </violation>
 <violation beginline="402" endline="402" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
-</violation>
-</file>
-<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\TableroFabrica.java">
-<violation beginline="24" endline="24" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="25" endline="25" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="26" endline="26" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="27" endline="27" begincolumn="9" endcolumn="24" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="TableroFabrica" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="226" endline="226" begincolumn="33" endcolumn="91" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="TableroFabrica" method="createCarril" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
-Avoid using if...else statements without curly braces
 </violation>
 </file>
 <file name="C:\Users\Esteban\workspace\Parchis\src\test\java\parchis\CasillaTest.java">
