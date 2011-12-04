@@ -1,32 +1,38 @@
 package parchis;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import parchis.Casilla.TipoCasilla;
 
 public class TableroFabrica {
-	Casilla carril[];
-	
-	Casilla pasilloAmarillo[];
-	Casilla pasilloAzul[];
-	Casilla pasilloRojo[];
-	Casilla pasilloVerde[];
+	private static final int SIETE = 7;
 
-	Casilla salidaAmarilla;
-	Casilla salidaAzul;
-	Casilla salidaRoja;
-	Casilla salidaVerde;
+	private static final int NN = 99;
 
-	Casilla metaAmarilla;
-	Casilla metaAzul;
-	Casilla metaRoja;
-	Casilla metaVerde;
+	private Casilla carril[];
 
-	ArrayList<Ficha> fichasAm;
-	ArrayList<Ficha> fichasAz;
-	ArrayList<Ficha> fichasR;
-	ArrayList<Ficha> fichasV;
+	private Casilla pasilloAmarillo[];
+	private Casilla pasilloAzul[];
+	private Casilla pasilloRojo[];
+	private Casilla pasilloVerde[];
 
-	Color amarillo = new Color("amarillo");
+	private Casilla salidaAmarilla;
+	private Casilla salidaAzul;
+	private Casilla salidaRoja;
+	private Casilla salidaVerde;
+
+	private Casilla metaAmarilla;
+	private Casilla metaAzul;
+	private Casilla metaRoja;
+	private Casilla metaVerde;
+
+	private List<Ficha> fichasAm;
+	private List<Ficha> fichasAz;
+	private List<Ficha> fichasR;
+	private List<Ficha> fichasV;
+
+	private Color amarillo = new Color("amarillo");
 
 	public TableroFabrica() {
 
@@ -68,15 +74,15 @@ public class TableroFabrica {
 	}
 
 	private void createMetas() {
-		metaAmarilla = new Casilla(TipoCasilla.META, 99);
-		metaAzul = new Casilla(TipoCasilla.META, 99);
-		metaRoja = new Casilla(TipoCasilla.META, 99);
-		metaVerde = new Casilla(TipoCasilla.META, 99);
+		metaAmarilla = new Casilla(TipoCasilla.META, NN);
+		metaAzul = new Casilla(TipoCasilla.META, NN);
+		metaRoja = new Casilla(TipoCasilla.META, NN);
+		metaVerde = new Casilla(TipoCasilla.META, NN);
 	}
 
 	private void createFichas() {
 
-		fichasAm = new ArrayList<Ficha>(4);
+		fichasAm = new ArrayList<Ficha>(CUATRO);
 
 		fichasAm.add(new Ficha(amarillo));
 		fichasAm.add(new Ficha(amarillo));
@@ -89,7 +95,7 @@ public class TableroFabrica {
 		salidaAmarilla.setFichas(fichasAm);
 
 		Color azul = new Color("azul");
-		fichasAz = new ArrayList<Ficha>(4);
+		fichasAz = new ArrayList<Ficha>(CUATRO);
 		fichasAz.add(new Ficha(azul));
 		fichasAz.add(new Ficha(azul));
 		fichasAz.add(new Ficha(azul));
@@ -100,7 +106,7 @@ public class TableroFabrica {
 		salidaAzul.setFichas(fichasAz);
 
 		Color rojo = new Color("rojo");
-		fichasR = new ArrayList<Ficha>(4);
+		fichasR = new ArrayList<Ficha>(CUATRO);
 		fichasR.add(new Ficha(rojo));
 		fichasR.add(new Ficha(rojo));
 		fichasR.add(new Ficha(rojo));
@@ -112,7 +118,7 @@ public class TableroFabrica {
 
 		Color verde = new Color("verde");
 
-		fichasV = new ArrayList<Ficha>(4);
+		fichasV = new ArrayList<Ficha>(CUATRO);
 		fichasV.add(new Ficha(verde));
 		fichasV.add(new Ficha(verde));
 		fichasV.add(new Ficha(verde));
@@ -130,10 +136,10 @@ public class TableroFabrica {
 		salidaRoja = new Casilla(TipoCasilla.INICIO, 0);
 		salidaVerde = new Casilla(TipoCasilla.INICIO, 0);
 
-		salidaAmarilla.setCasillaSiguiente(carril[5 - 1]);
-		salidaAzul.setCasillaSiguiente(carril[22 - 1]);
-		salidaRoja.setCasillaSiguiente(carril[39 - 1]);
-		salidaVerde.setCasillaSiguiente(carril[56 - 1]);
+		salidaAmarilla.setCasillaSiguiente(carril[CINCO - 1]);
+		salidaAzul.setCasillaSiguiente(carril[VEINTIDOS - 1]);
+		salidaRoja.setCasillaSiguiente(carril[TRENTAINUEVE - 1]);
+		salidaVerde.setCasillaSiguiente(carril[CINCUENTAISEIS - 1]);
 	}
 
 	private void createPasillos() {
@@ -201,29 +207,45 @@ public class TableroFabrica {
 	}
 
 	private void createEstructuras() {
-		carril = new Casilla[68];
-		pasilloAmarillo = new Casilla[7];
-		pasilloAzul = new Casilla[7];
-		pasilloVerde = new Casilla[7];
-		pasilloRojo = new Casilla[7];
+		carril = new Casilla[SESENTAIOCHO];
+		pasilloAmarillo = new Casilla[SIETE];
+		pasilloAzul = new Casilla[SIETE];
+		pasilloVerde = new Casilla[SIETE];
+		pasilloRojo = new Casilla[SIETE];
 
 	}
 
+	private static final int DOCE = 12;
+	private static final int DIECISIETE = 17;
+	private static final int VEINTIDOS = 22;
+	private static final int VEINTINUEVE = 29;
+	private static final int TRENTAICUATRO = 34;
+	private static final int TRENTAINUEVE = 39;
+	private static final int CUATRO = 4;
+	private static final int CUARENTAISEIS = 46;
+	private static final int CINCO = 5;
+	private static final int CINCUENTAIUNO = 51;
+	private static final int SESENTAITRES = 63;
+	private static final int SESENTAIOCHO = 68;
+
+	private static final int CINCUENTAISEIS = 56;
+
 	private void createCarril() {
-
-		carril = new Casilla[68];
-
+		carril = new Casilla[SESENTAIOCHO];
 		for (int i = 1; i <= carril.length; i++) {
-
-			if (i == 12 || i == 29 || i == 46 || i == 63) {
+			if (i == DOCE || i == VEINTINUEVE || i == CUARENTAISEIS
+					|| i == SESENTAITRES) {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.SEGURO, i);
-			} else if (i == 68 || i == 17 || i == 34 || i == 51) {
+			} else if (i == SESENTAIOCHO || i == DIECISIETE
+					|| i == TRENTAICUATRO || i == CINCUENTAIUNO) {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.ENTRADA_META, i);
-			} else if (i == 5 || i == 22 || i == 39 || i == 56) {
+			} else if (i == CINCO || i == VEINTIDOS || i == TRENTAINUEVE
+					|| i == CINCUENTAISEIS) {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.PUNTO_PARTIDA,
 						i);
-			} else
+			} else {
 				carril[i - 1] = new Casilla(Casilla.TipoCasilla.NORMAL, i);
+			}
 		}
 
 		for (int i = 1; i < carril.length; i++) {
