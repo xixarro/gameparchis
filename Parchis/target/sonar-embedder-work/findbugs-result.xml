@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
 
-<BugCollection version="1.3.9" sequence="0" timestamp="1322969796868" analysisTimestamp="1322969801447" release="">
+<BugCollection version="1.3.9" sequence="0" timestamp="1322972049648" analysisTimestamp="1322972056408" release="">
   <Project>
     <Jar>C:\Users\Esteban\workspace\Parchis\target\classes</Jar>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\target\test-classes</AuxClasspathEntry>
@@ -18,8 +18,8 @@
     <AuxClasspathEntry>C:\Program Files\Java\jre7\lib\ext\zipfs.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\lib\junit-4.10.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\lib\mockito-all-1.9.0-rc1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs8534889099466786669.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs993971620503442857.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs3949590501990669563.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs2248694874630906897.jar</AuxClasspathEntry>
     <SrcDir>C:\Users\Esteban\workspace\Parchis\src\main\java</SrcDir>
     <SrcDir>C:\Users\Esteban\workspace\Parchis\src\test\java</SrcDir>
     <WrkDir>C:\Users\Esteban\workspace\Parchis\target\sonar-embedder-work\target</WrkDir>
@@ -70,147 +70,17 @@
       <Message>Dereferenced at Parchis.java:[line 82]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="656be3aaffdca0e7e0039363c821122" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>parchis.Tablero.setCarril(Casilla[]) may expose internal representation by storing an externally mutable object into Tablero.carril</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="setCarril" signature="([Lparchis/Casilla;)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="236" end="237" startBytecode="0" endBytecode="61" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.setCarril(Casilla[])</Message>
-    </Method>
-    <Field classname="parchis.Tablero" name="carril" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.carril</Message>
-    </Field>
-    <LocalVariable name="carril" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
-      <Message>Local variable named carril</Message>
-    </LocalVariable>
-    <SourceLine classname="parchis.Tablero" primary="true" start="236" end="236" startBytecode="2" endBytecode="2" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-      <Message>At Tablero.java:[line 236]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="d4328e1b8ed8dda6906468d43390b8e4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>parchis.Tablero.setPasilloAmarillo(Casilla[]) may expose internal representation by storing an externally mutable object into Tablero.pasilloAmarillo</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="setPasilloAmarillo" signature="([Lparchis/Casilla;)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="220" end="221" startBytecode="0" endBytecode="61" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.setPasilloAmarillo(Casilla[])</Message>
-    </Method>
-    <Field classname="parchis.Tablero" name="pasilloAmarillo" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloAmarillo</Message>
-    </Field>
-    <LocalVariable name="pasilloAmarillo" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
-      <Message>Local variable named pasilloAmarillo</Message>
-    </LocalVariable>
-    <SourceLine classname="parchis.Tablero" primary="true" start="220" end="220" startBytecode="2" endBytecode="2" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-      <Message>At Tablero.java:[line 220]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="2bd738ba7d7c4e997db044a56403bae7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>parchis.Tablero.setPasilloAzul(Casilla[]) may expose internal representation by storing an externally mutable object into Tablero.pasilloAzul</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="setPasilloAzul" signature="([Lparchis/Casilla;)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="224" end="225" startBytecode="0" endBytecode="61" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.setPasilloAzul(Casilla[])</Message>
-    </Method>
-    <Field classname="parchis.Tablero" name="pasilloAzul" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloAzul</Message>
-    </Field>
-    <LocalVariable name="pasilloAzul" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
-      <Message>Local variable named pasilloAzul</Message>
-    </LocalVariable>
-    <SourceLine classname="parchis.Tablero" primary="true" start="224" end="224" startBytecode="2" endBytecode="2" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-      <Message>At Tablero.java:[line 224]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="895bd1cdbaf01d9e97afaeddc8ee67de" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>parchis.Tablero.setPasilloRojo(Casilla[]) may expose internal representation by storing an externally mutable object into Tablero.pasilloRojo</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="setPasilloRojo" signature="([Lparchis/Casilla;)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="228" end="229" startBytecode="0" endBytecode="61" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.setPasilloRojo(Casilla[])</Message>
-    </Method>
-    <Field classname="parchis.Tablero" name="pasilloRojo" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloRojo</Message>
-    </Field>
-    <LocalVariable name="pasilloRojo" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
-      <Message>Local variable named pasilloRojo</Message>
-    </LocalVariable>
-    <SourceLine classname="parchis.Tablero" primary="true" start="228" end="228" startBytecode="2" endBytecode="2" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-      <Message>At Tablero.java:[line 228]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="dcb60e3c0a9fb45b8eed37892380f9f8" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
-    <LongMessage>parchis.Tablero.setPasilloVerde(Casilla[]) may expose internal representation by storing an externally mutable object into Tablero.pasilloVerde</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="setPasilloVerde" signature="([Lparchis/Casilla;)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="232" end="233" startBytecode="0" endBytecode="61" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.setPasilloVerde(Casilla[])</Message>
-    </Method>
-    <Field classname="parchis.Tablero" name="pasilloVerde" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloVerde</Message>
-    </Field>
-    <LocalVariable name="pasilloVerde" register="1" pc="2" role="LOCAL_VARIABLE_NAMED">
-      <Message>Local variable named pasilloVerde</Message>
-    </LocalVariable>
-    <SourceLine classname="parchis.Tablero" primary="true" start="232" end="232" startBytecode="2" endBytecode="2" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-      <Message>At Tablero.java:[line 232]</Message>
-    </SourceLine>
-  </BugInstance>
   <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="b7cf051441363013198b1626cc7a63df" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Null pointer dereference</ShortMessage>
     <LongMessage>Null pointer dereference of System.out in parchis.Tablero.elegirFichaDesplazable(Jugador, int)</LongMessage>
     <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
+      <SourceLine classname="parchis.Tablero" start="15" end="434" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
+        <Message>At Tablero.java:[lines 15-434]</Message>
       </SourceLine>
       <Message>In class parchis.Tablero</Message>
     </Class>
     <Method classname="parchis.Tablero" name="elegirFichaDesplazable" signature="(Lparchis/Jugador;I)Lparchis/Ficha;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="346" end="365" startBytecode="0" endBytecode="355" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
+      <SourceLine classname="parchis.Tablero" start="369" end="388" startBytecode="0" endBytecode="355" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
       <Message>In method parchis.Tablero.elegirFichaDesplazable(Jugador, int)</Message>
     </Method>
     <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
@@ -219,21 +89,21 @@
       </SourceLine>
       <Message>Value loaded from field java.lang.System.out</Message>
     </Field>
-    <SourceLine classname="parchis.Tablero" primary="true" start="358" end="358" startBytecode="102" endBytecode="102" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Tablero.java:[line 358]</Message>
+    <SourceLine classname="parchis.Tablero" primary="true" start="381" end="381" startBytecode="102" endBytecode="102" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at Tablero.java:[line 381]</Message>
     </SourceLine>
   </BugInstance>
   <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="d1535c322afa97e9019437e1957fd814" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Null pointer dereference</ShortMessage>
     <LongMessage>Null pointer dereference of System.out in parchis.Tablero.eligeFichaYMueve(Jugador, int)</LongMessage>
     <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
+      <SourceLine classname="parchis.Tablero" start="15" end="434" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
+        <Message>At Tablero.java:[lines 15-434]</Message>
       </SourceLine>
       <Message>In class parchis.Tablero</Message>
     </Class>
     <Method classname="parchis.Tablero" name="eligeFichaYMueve" signature="(Lparchis/Jugador;I)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="400" end="411" startBytecode="0" endBytecode="163" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
+      <SourceLine classname="parchis.Tablero" start="423" end="434" startBytecode="0" endBytecode="163" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
       <Message>In method parchis.Tablero.eligeFichaYMueve(Jugador, int)</Message>
     </Method>
     <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
@@ -242,141 +112,13 @@
       </SourceLine>
       <Message>Value loaded from field java.lang.System.out</Message>
     </Field>
-    <SourceLine classname="parchis.Tablero" primary="true" start="402" end="402" startBytecode="17" endBytecode="17" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Tablero.java:[line 402]</Message>
+    <SourceLine classname="parchis.Tablero" primary="true" start="425" end="425" startBytecode="17" endBytecode="17" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at Tablero.java:[line 425]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="ae81b9599c37d45363452241a56befb4" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Field not initialized in constructor</ShortMessage>
-    <LongMessage>Tablero.carril not initialized in constructor</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Field classname="parchis.Tablero" name="carril" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.carril</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" synthetic="true">
-      <Message>In Tablero.java</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="6e781af8df6a91f8513f5f5f73430d79" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Field not initialized in constructor</ShortMessage>
-    <LongMessage>Tablero.pasilloAmarillo not initialized in constructor</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Field classname="parchis.Tablero" name="pasilloAmarillo" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloAmarillo</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" synthetic="true">
-      <Message>In Tablero.java</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="fb263ee72bbedd4608625c8f7e468551" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Field not initialized in constructor</ShortMessage>
-    <LongMessage>Tablero.pasilloAzul not initialized in constructor</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Field classname="parchis.Tablero" name="pasilloAzul" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloAzul</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" synthetic="true">
-      <Message>In Tablero.java</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="58c033efd9477231d8dfdf685da71448" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Field not initialized in constructor</ShortMessage>
-    <LongMessage>Tablero.pasilloRojo not initialized in constructor</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Field classname="parchis.Tablero" name="pasilloRojo" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloRojo</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" synthetic="true">
-      <Message>In Tablero.java</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" priority="3" abbrev="UwF" category="STYLE" instanceHash="da2368b179efbeaac4c283cc0317f2db" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Field not initialized in constructor</ShortMessage>
-    <LongMessage>Tablero.pasilloVerde not initialized in constructor</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="411" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-411]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Field classname="parchis.Tablero" name="pasilloVerde" signature="[Lparchis/Casilla;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>In Tablero.java</Message>
-      </SourceLine>
-      <Message>Field parchis.Tablero.pasilloVerde</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" synthetic="true">
-      <Message>In Tablero.java</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugCategory category="STYLE">
-    <Description>Dodgy</Description>
-  </BugCategory>
-  <BugCategory category="MALICIOUS_CODE">
-    <Description>Malicious code vulnerability</Description>
-  </BugCategory>
   <BugCategory category="CORRECTNESS">
     <Description>Correctness</Description>
   </BugCategory>
-  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
-    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
-    <Details><![CDATA[
-
-  <p> This code stores a reference to an externally mutable object into the
-  internal representation of the object.&nbsp;
-   If instances
-   are accessed by untrusted code, and unchecked changes to
-   the mutable object would compromise security or other
-   important properties, you will need to do something different.
-  Storing a copy of the object is better approach in many situations.</p>
-
-    ]]></Details>
-  </BugPattern>
-  <BugPattern type="UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR" abbrev="UwF" category="STYLE">
-    <ShortDescription>Field not initialized in constructor</ShortDescription>
-    <Details><![CDATA[
-
-  <p> This field is never initialized within any constructor, and is therefore could be null after
-the object is constructed.
-This could be a either an error or a questionable design, since
-it means a null pointer exception will be generated if that field is dereferenced
-before being initialized.
-</p>
-
-    ]]></Details>
-  </BugPattern>
   <BugPattern type="NP_ALWAYS_NULL" abbrev="NP" category="CORRECTNESS">
     <ShortDescription>Null pointer dereference</ShortDescription>
     <Details><![CDATA[
@@ -386,17 +128,11 @@ before being initialized.
 
     ]]></Details>
   </BugPattern>
-  <BugCode abbrev="UwF">
-    <Description>Unwritten field</Description>
-  </BugCode>
-  <BugCode abbrev="EI2">
-    <Description>Storing reference to mutable object</Description>
-  </BugCode>
   <BugCode abbrev="NP" cweid="476">
     <Description>Null pointer dereference</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 4 Dec 2011 04:36:36 +0100" total_classes="10" referenced_classes="37" total_bugs="14" total_size="767" num_packages="1" vm_version="20.4-b02" cpu_seconds="1.23" clock_seconds="1.23" peak_mbytes="328.39" alloc_mbytes="494.94" gc_seconds="0.11" priority_3="5" priority_2="5" priority_1="4">
+  <FindBugsSummary timestamp="Sun, 4 Dec 2011 05:14:09 +0100" total_classes="10" referenced_classes="37" total_bugs="4" total_size="779" num_packages="1" vm_version="20.4-b02" cpu_seconds="1.26" clock_seconds="1.26" peak_mbytes="329.54" alloc_mbytes="494.94" gc_seconds="0.14" priority_1="4">
     <FileStats path="parchis/Casilla.java" bugCount="0" size="71"/>
     <FileStats path="parchis/Color.java" bugCount="0" size="32"/>
     <FileStats path="parchis/Dado.java" bugCount="0" size="8"/>
@@ -404,9 +140,9 @@ before being initialized.
     <FileStats path="parchis/Jugador.java" bugCount="0" size="74"/>
     <FileStats path="parchis/Main.java" bugCount="0" size="11"/>
     <FileStats path="parchis/Parchis.java" bugCount="2" size="85" bugHash="5b15a8afab179cd31aa44dd5fd83b0aa"/>
-    <FileStats path="parchis/Tablero.java" bugCount="12" size="255" bugHash="af7b503120da55308a1d5c77a6475724"/>
+    <FileStats path="parchis/Tablero.java" bugCount="2" size="267" bugHash="6668c4142b16a5d075ef621feb71e64f"/>
     <FileStats path="parchis/TableroFabrica.java" bugCount="0" size="187"/>
-    <PackageStats package="parchis" total_bugs="14" total_types="10" total_size="767" priority_3="5" priority_2="5" priority_1="4">
+    <PackageStats package="parchis" total_bugs="4" total_types="10" total_size="779" priority_1="4">
       <ClassStats class="parchis.Casilla" sourceFile="Casilla.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="parchis.Casilla$TipoCasilla" sourceFile="Casilla.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="parchis.Color" sourceFile="Color.java" interface="false" size="32" bugs="0"/>
@@ -415,26 +151,28 @@ before being initialized.
       <ClassStats class="parchis.Jugador" sourceFile="Jugador.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="parchis.Main" sourceFile="Main.java" interface="false" size="11" bugs="0"/>
       <ClassStats class="parchis.Parchis" sourceFile="Parchis.java" interface="false" size="85" bugs="2" priority_1="2"/>
-      <ClassStats class="parchis.Tablero" sourceFile="Tablero.java" interface="false" size="255" bugs="12" priority_3="5" priority_2="5" priority_1="2"/>
+      <ClassStats class="parchis.Tablero" sourceFile="Tablero.java" interface="false" size="267" bugs="2" priority_1="2"/>
       <ClassStats class="parchis.TableroFabrica" sourceFile="TableroFabrica.java" interface="false" size="187" bugs="0"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="15" invocations="112" avgMicrosecondsPerInvocation="140" maxMicrosecondsPerInvocation="1177" standardDeviationMircosecondsPerInvocation="154"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="16" invocations="37" avgMicrosecondsPerInvocation="433" maxMicrosecondsPerInvocation="2995" standardDeviationMircosecondsPerInvocation="631"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="112" avgMicrosecondsPerInvocation="183" maxMicrosecondsPerInvocation="1689" standardDeviationMircosecondsPerInvocation="222"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="21" invocations="112" avgMicrosecondsPerInvocation="196" maxMicrosecondsPerInvocation="2074" standardDeviationMircosecondsPerInvocation="271"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="25" invocations="37" avgMicrosecondsPerInvocation="685" maxMicrosecondsPerInvocation="4126" standardDeviationMircosecondsPerInvocation="1019"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="29" invocations="789" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="701" standardDeviationMircosecondsPerInvocation="54"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="40" invocations="37" avgMicrosecondsPerInvocation="1106" maxMicrosecondsPerInvocation="32657" standardDeviationMircosecondsPerInvocation="5268"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="324" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="366" standardDeviationMircosecondsPerInvocation="45"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="43" invocations="322" avgMicrosecondsPerInvocation="134" maxMicrosecondsPerInvocation="1375" standardDeviationMircosecondsPerInvocation="187"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="44" invocations="112" avgMicrosecondsPerInvocation="395" maxMicrosecondsPerInvocation="5378" standardDeviationMircosecondsPerInvocation="628"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="52" invocations="15" avgMicrosecondsPerInvocation="3484" maxMicrosecondsPerInvocation="48498" standardDeviationMircosecondsPerInvocation="12030"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="62" invocations="112" avgMicrosecondsPerInvocation="557" maxMicrosecondsPerInvocation="8399" standardDeviationMircosecondsPerInvocation="948"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="65" invocations="112" avgMicrosecondsPerInvocation="586" maxMicrosecondsPerInvocation="8360" standardDeviationMircosecondsPerInvocation="925"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="75" invocations="68" avgMicrosecondsPerInvocation="1104" maxMicrosecondsPerInvocation="41734" standardDeviationMircosecondsPerInvocation="5007"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="77" invocations="112" avgMicrosecondsPerInvocation="692" maxMicrosecondsPerInvocation="10641" standardDeviationMircosecondsPerInvocation="1206"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="128" invocations="149" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="40799" standardDeviationMircosecondsPerInvocation="3429"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="16" invocations="37" avgMicrosecondsPerInvocation="441" maxMicrosecondsPerInvocation="2688" standardDeviationMircosecondsPerInvocation="654"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="16" invocations="112" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="1190" standardDeviationMircosecondsPerInvocation="153"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="20" invocations="112" avgMicrosecondsPerInvocation="185" maxMicrosecondsPerInvocation="1663" standardDeviationMircosecondsPerInvocation="216"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="21" invocations="112" avgMicrosecondsPerInvocation="194" maxMicrosecondsPerInvocation="2074" standardDeviationMircosecondsPerInvocation="265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="25" invocations="37" avgMicrosecondsPerInvocation="680" maxMicrosecondsPerInvocation="4071" standardDeviationMircosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="29" invocations="789" avgMicrosecondsPerInvocation="37" maxMicrosecondsPerInvocation="687" standardDeviationMircosecondsPerInvocation="53"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="34" invocations="68" avgMicrosecondsPerInvocation="501" maxMicrosecondsPerInvocation="5119" standardDeviationMircosecondsPerInvocation="665"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="41" invocations="324" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="282" standardDeviationMircosecondsPerInvocation="38"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="42" invocations="322" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="1262" standardDeviationMircosecondsPerInvocation="183"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="42" invocations="112" avgMicrosecondsPerInvocation="383" maxMicrosecondsPerInvocation="5372" standardDeviationMircosecondsPerInvocation="590"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethodInvocations" totalMilliseconds="47" invocations="10" avgMicrosecondsPerInvocation="4737" maxMicrosecondsPerInvocation="46222" standardDeviationMircosecondsPerInvocation="13828"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindBadForLoop" totalMilliseconds="49" invocations="10" avgMicrosecondsPerInvocation="4970" maxMicrosecondsPerInvocation="46180" standardDeviationMircosecondsPerInvocation="13742"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="51" invocations="37" avgMicrosecondsPerInvocation="1383" maxMicrosecondsPerInvocation="43399" standardDeviationMircosecondsPerInvocation="7009"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="60" invocations="15" avgMicrosecondsPerInvocation="4002" maxMicrosecondsPerInvocation="56368" standardDeviationMircosecondsPerInvocation="13995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="64" invocations="112" avgMicrosecondsPerInvocation="577" maxMicrosecondsPerInvocation="8170" standardDeviationMircosecondsPerInvocation="932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="67" invocations="112" avgMicrosecondsPerInvocation="600" maxMicrosecondsPerInvocation="8576" standardDeviationMircosecondsPerInvocation="940"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="80" invocations="112" avgMicrosecondsPerInvocation="717" maxMicrosecondsPerInvocation="11673" standardDeviationMircosecondsPerInvocation="1279"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="89" invocations="149" avgMicrosecondsPerInvocation="597" maxMicrosecondsPerInvocation="7624" standardDeviationMircosecondsPerInvocation="990"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>
