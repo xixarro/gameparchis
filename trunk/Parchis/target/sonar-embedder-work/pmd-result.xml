@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2011-12-04T05:14:19.056">
+<pmd version="4.2.5" timestamp="2011-12-04T05:23:04.520">
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Parchis.java">
 <violation beginline="15" endline="15" begincolumn="17" endcolumn="34" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Parchis" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
@@ -21,10 +21,10 @@ System.out.print is used
 </violation>
 </file>
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Tablero.java">
-<violation beginline="381" endline="381" begincolumn="49" endcolumn="66" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="386" endline="386" begincolumn="49" endcolumn="66" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
-<violation beginline="425" endline="425" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="430" endline="430" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
 </file>

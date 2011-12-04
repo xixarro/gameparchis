@@ -226,7 +226,7 @@ public class TableroFabrica {
 	private static final int CINCO = 5;
 	private static final int CINCUENTAIUNO = 51;
 	private static final int SESENTAITRES = 63;
-	private static final int SESENTAIOCHO = 68;
+	public static final int SESENTAIOCHO = 68;
 
 	private static final int CINCUENTAISEIS = 56;
 
