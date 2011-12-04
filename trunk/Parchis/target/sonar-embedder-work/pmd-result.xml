@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2011-12-04T03:26:25.758">
-<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Jugador.java">
-<violation beginline="16" endline="16" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Jugador" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="22" endline="22" begincolumn="24" endcolumn="39" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Jugador" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="37" endline="37" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Jugador" method="getFichas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="86" endline="87" begincolumn="25" endcolumn="50" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Jugador" method="TodasEnSalida" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
-Avoid using if statements without curly braces
-</violation>
-<violation beginline="153" endline="154" begincolumn="25" endcolumn="49" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Jugador" method="tieneFichaEnCasillaSalida" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
-Avoid using if statements without curly braces
-</violation>
-</file>
+<pmd version="4.2.5" timestamp="2011-12-04T03:49:25.700">
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Parchis.java">
 <violation beginline="15" endline="15" begincolumn="17" endcolumn="34" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Parchis" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
@@ -38,67 +21,67 @@ System.out.print is used
 </violation>
 </file>
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Tablero.java">
-<violation beginline="36" endline="36" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
-<violation beginline="37" endline="37" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
-Avoid using implementation types like 'ArrayList'; use the interface instead
-</violation>
 <violation beginline="38" endline="38" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
 <violation beginline="39" endline="39" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="154" endline="154" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasAmarillas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="40" endline="40" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="158" endline="158" begincolumn="40" endcolumn="55" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAmarillas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="41" endline="41" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="162" endline="162" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasAzules" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="156" endline="156" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasAmarillas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="166" endline="166" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAzules" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="160" endline="160" begincolumn="40" endcolumn="55" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAmarillas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="170" endline="170" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasRojas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="164" endline="164" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasAzules" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="174" endline="174" begincolumn="36" endcolumn="51" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasRojas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="168" endline="168" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasAzules" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="178" endline="178" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasVerdes" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="172" endline="172" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasRojas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="182" endline="182" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasVerdes" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+<violation beginline="176" endline="176" begincolumn="36" endcolumn="51" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasRojas" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
-<violation beginline="218" endline="218" begincolumn="40" endcolumn="64" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAmarillo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
+<violation beginline="180" endline="180" begincolumn="16" endcolumn="31" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="getFichasVerdes" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="184" endline="184" begincolumn="37" endcolumn="52" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Tablero" method="setFichasVerdes" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
+Avoid using implementation types like 'ArrayList'; use the interface instead
+</violation>
+<violation beginline="220" endline="220" begincolumn="40" endcolumn="64" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAmarillo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
 The user-supplied array 'pasilloAmarillo' is stored directly.
 </violation>
-<violation beginline="222" endline="222" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAzul" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
+<violation beginline="224" endline="224" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloAzul" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
 The user-supplied array 'pasilloAzul' is stored directly.
 </violation>
-<violation beginline="226" endline="226" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloRojo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
+<violation beginline="228" endline="228" begincolumn="36" endcolumn="56" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloRojo" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
 The user-supplied array 'pasilloRojo' is stored directly.
 </violation>
-<violation beginline="230" endline="230" begincolumn="37" endcolumn="58" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloVerde" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
+<violation beginline="232" endline="232" begincolumn="37" endcolumn="58" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setPasilloVerde" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
 The user-supplied array 'pasilloVerde' is stored directly.
 </violation>
-<violation beginline="234" endline="234" begincolumn="31" endcolumn="46" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setCarril" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
+<violation beginline="236" endline="236" begincolumn="31" endcolumn="46" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="parchis" class="Tablero" method="setCarril" externalInfoUrl="http://pmd.sourceforge.net/rules/sunsecure.html#ArrayIsStoredDirectly" priority="2">
 The user-supplied array 'carril' is stored directly.
 </violation>
-<violation beginline="355" endline="361" begincolumn="49" endcolumn="49" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
+<violation beginline="357" endline="363" begincolumn="49" endcolumn="49" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
 These nested if statements could be combined
 </violation>
-<violation beginline="356" endline="359" begincolumn="57" endcolumn="57" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
+<violation beginline="358" endline="361" begincolumn="57" endcolumn="57" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
 These nested if statements could be combined
 </violation>
-<violation beginline="357" endline="357" begincolumn="65" endcolumn="82" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="359" endline="359" begincolumn="65" endcolumn="82" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="elegirFichaDesplazable" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
-<violation beginline="402" endline="402" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+<violation beginline="404" endline="404" begincolumn="25" endcolumn="42" rule="SystemPrintln" ruleset="Java Logging Rules" package="parchis" class="Tablero" method="eligeFichaYMueve" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
 System.out.print is used
 </violation>
 </file>
