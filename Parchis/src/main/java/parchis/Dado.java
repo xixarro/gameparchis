@@ -8,6 +8,7 @@ import java.util.Random;
  *
  */
 public class Dado {
+	private static final int TIRADA_MAXIMA=6;
 	/**
 	 * @brief Simula tirar un dado.
 	 * 
@@ -18,6 +19,6 @@ public class Dado {
 	public int tirarDado() {
 		Random dado = new Random();
 		dado.setSeed(new Date().getTime());
-		return dado.nextInt(6) + 1;
+		return dado.nextInt(TIRADA_MAXIMA) + 1;
 	}
 }

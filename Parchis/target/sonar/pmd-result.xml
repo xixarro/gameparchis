@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2011-12-04T03:26:25.758">
+<pmd version="4.2.5" timestamp="2011-12-04T03:08:23.737">
+<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Casilla.java">
+<violation beginline="144" endline="149" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Casilla" method="esPuente" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
+These nested if statements could be combined
+</violation>
+<violation beginline="145" endline="148" begincolumn="33" endcolumn="33" rule="CollapsibleIfStatements" ruleset="Basic Rules" package="parchis" class="Casilla" method="esPuente" externalInfoUrl="http://pmd.sourceforge.net/rules/basic.html#CollapsibleIfStatements" priority="4">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Color.java">
+<violation beginline="28" endline="29" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Color" method="equals" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="30" endline="31" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Color" method="equals" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="32" endline="33" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Color" method="equals" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="36" endline="37" begincolumn="25" endcolumn="45" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Color" method="equals" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="38" endline="39" begincolumn="24" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="Color" method="equals" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+</file>
 <file name="C:\Users\Esteban\workspace\Parchis\src\main\java\parchis\Jugador.java">
 <violation beginline="16" endline="16" begincolumn="17" endcolumn="32" rule="LooseCoupling" ruleset="Coupling Rules" package="parchis" class="Jugador" externalInfoUrl="http://pmd.sourceforge.net/rules/coupling.html#LooseCoupling" priority="3">
 Avoid using implementation types like 'ArrayList'; use the interface instead
@@ -117,16 +142,6 @@ Avoid using implementation types like 'ArrayList'; use the interface instead
 </violation>
 <violation beginline="226" endline="226" begincolumn="33" endcolumn="91" rule="IfElseStmtsMustUseBraces" ruleset="Braces Rules" package="parchis" class="TableroFabrica" method="createCarril" externalInfoUrl="http://pmd.sourceforge.net/rules/braces.html#IfElseStmtsMustUseBraces" priority="3">
 Avoid using if...else statements without curly braces
-</violation>
-</file>
-<file name="C:\Users\Esteban\workspace\Parchis\src\test\java\parchis\CasillaTest.java">
-<violation beginline="22" endline="22" begincolumn="22" endcolumn="42" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer Rules" package="parchis" class="CasillaTest" method="testGetTipoCasilla" externalInfoUrl="http://pmd.sourceforge.net/rules/strings.html#AvoidDuplicateLiterals" priority="3">
-The String literal &quot;Not yet implemented&quot; appears 10 times in this file; the first occurrence is on line 22
-</violation>
-</file>
-<file name="C:\Users\Esteban\workspace\Parchis\src\test\java\parchis\FichaTest.java">
-<violation beginline="16" endline="16" begincolumn="17" endcolumn="32" rule="SingularField" ruleset="Design Rules" package="parchis" class="FichaTest" variable="colorMock" externalInfoUrl="http://pmd.sourceforge.net/rules/design.html#SingularField" priority="4">
-Perhaps 'colorMock' could be replaced by a local variable.
 </violation>
 </file>
 </pmd>
