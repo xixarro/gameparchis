@@ -226,14 +226,14 @@ public class Tablero {
 
 	public void setPasilloAmarillo(Casilla[] pasilloAmarillo) {
 		//this.pasilloAmarillo = pasilloAmarillo;
-		this.pasilloAmarillo= new Casilla[68];
+		this.pasilloAmarillo= new Casilla[TableroFabrica.SESENTAIOCHO];
 		for (int i = 0; i < pasilloAmarillo.length; i++) {
 			this.pasilloAmarillo[i]=pasilloAmarillo[i];
 		}
 	}
 
 	public void setPasilloAzul(Casilla[] pasilloAzul) {
-		this.pasilloAzul= new Casilla[68];
+		this.pasilloAzul= new Casilla[TableroFabrica.SESENTAIOCHO];
 		//this.pasilloAzul = pasilloAzul;
 		for (int i = 0; i < pasilloAzul.length; i++) {
 			this.pasilloAzul[i]=pasilloAzul[i];
@@ -242,7 +242,7 @@ public class Tablero {
 
 	public void setPasilloRojo(Casilla[] pasilloRojo) {
 		//this.pasilloRojo = pasilloRojo;
-		this.pasilloRojo= new Casilla[68];
+		this.pasilloRojo= new Casilla[TableroFabrica.SESENTAIOCHO];
 		for (int i = 0; i < pasilloRojo.length; i++) {
 			this.pasilloRojo[i]=pasilloRojo[i];
 		}
@@ -250,7 +250,7 @@ public class Tablero {
 
 	public void setPasilloVerde(Casilla[] pasilloVerde) {
 		//this.pasilloVerde = pasilloVerde;
-		this.pasilloVerde= new Casilla[68];
+		this.pasilloVerde= new Casilla[TableroFabrica.SESENTAIOCHO];
 		for (int i = 0; i < pasilloVerde.length; i++) {
 			this.pasilloVerde[i]=pasilloVerde[i];
 		}
@@ -258,7 +258,7 @@ public class Tablero {
 
 	public void setCarril(Casilla[] carril) {
 		//this.carril = carril;
-		this.carril= new Casilla[68];
+		this.carril= new Casilla[TableroFabrica.SESENTAIOCHO];
 		for (int i = 0; i < carril.length; i++) {
 			this.carril[i]=carril[i];
 		}
