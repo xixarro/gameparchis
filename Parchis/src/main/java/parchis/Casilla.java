@@ -9,15 +9,10 @@ import java.util.List;
 
 public class Casilla {
 
-	private List<Ficha> fichas;
-	/** < Lista de fichas que contiene la casilla */
-	private TipoCasilla tipoCasilla;
-	/** < Tipo de la casilla. */
-	private Casilla casillaSiguiente;
-	/** < Siguiente Casilla a la que apunta la casilla actual. */
-	private int posicion;
-
-	/** < Numero de la casilla a la que corresponde. */
+	private List<Ficha> fichas;	/**< Lista de fichas que contiene la casilla */
+	private TipoCasilla tipoCasilla;/**< Tipo de la casilla. */
+	private Casilla casillaSiguiente;/**< Siguiente Casilla a la que apunta la casilla actual. */
+	private int posicion;/**< Numero de la casilla a la que corresponde. */
 
 	/**
 	 * @brief Observador
@@ -97,14 +92,15 @@ public class Casilla {
 		 * estará salvada y no podrá ser comida.
 		 */
 		PASILLO, /**
-		 * < Tipo de Casilla pasillo, Casillas predecesoras a meta
-		 * donde solo entran las fichas de su color, no pueden ser comidas.
+		 * < Tipo de Casilla pasillo, Casillas predecesoras a meta donde
+		 * solo entran las fichas de su color, no pueden ser comidas.
 		 */
-		META
+		META,
 		/**
 		 * < Tipo de Casilla meta, la ficha que este en esta Casilla ha llegado
 		 * a su destino y no vuelve al juego
 		 */
+		INICIO
 	}
 
 	/**
@@ -144,14 +140,15 @@ public class Casilla {
 	public boolean esPuente() {
 		boolean esPuente = false;
 		if (this.tipoCasilla != TipoCasilla.NORMAL
-				&& this.tipoCasilla != TipoCasilla.META
-				&& this.fichas.size() == 2
-				&& this.fichas.get(0).getColorFicha() == this.fichas.get(1)
-						.getColorFicha()) {
-			esPuente = true;
-
+				&& this.tipoCasilla != TipoCasilla.META) {
+			if (this.fichas.size() == 2) {
+				if (this.fichas.get(0).getColorFicha()
+						== this.fichas.get(1).getColorFicha()) {
+					esPuente = true;
+				}
+			}
 		}
-
+			
 		return esPuente;
 	}
 

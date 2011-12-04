@@ -2,7 +2,6 @@ package parchis;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * @brief Representa una partida de Parchís.
@@ -13,7 +12,7 @@ import java.util.List;
  */
 public class Parchis {
 	
-	private List<Jugador> jugadores;
+	private ArrayList<Jugador> jugadores;
 	private Tablero tablero;
 	private Iterator<Jugador> itj;
 	
@@ -79,7 +78,8 @@ public class Parchis {
 		
 		
 		while (!fin()) {
-			System.out.println("Truno del Jugador: " + jugadorActual.getColor());
+			System.out
+					.println("Truno del Jugador: " + jugadorActual.getColor());
 			tirada = new Dado().tirarDado();
 			switch (tirada) {
 			case 5:
