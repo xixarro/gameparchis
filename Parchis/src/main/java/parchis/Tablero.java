@@ -14,6 +14,14 @@ import parchis.Casilla.TipoCasilla;
 
 public class Tablero {
 
+	public Tablero() {
+		this.carril = null;
+		this.pasilloAmarillo =  null;
+		this.pasilloAzul =  null;
+		this.pasilloRojo =  null;
+		this.pasilloVerde =  null;
+	}
+
 	private Casilla carril[];
 	/**
 	 * < Atributo representa el carril principal de Casillas consecutivas hasta
