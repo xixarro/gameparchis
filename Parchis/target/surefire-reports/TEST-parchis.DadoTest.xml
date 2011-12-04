@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0" errors="0" skipped="0" tests="1" name="parchis.DadoTest">
+<testsuite failures="0" time="0.007" errors="0" skipped="0" tests="1" name="parchis.DadoTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_01\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\Users\Esteban\workspace\Parchis"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.7.0_01\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\Esteban\workspace\Parchis\target\surefire\surefirebooter6471475654330467079.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Esteban\workspace\Parchis\target\surefire\surefirebooter4522843883239382602.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\Esteban\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.7"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.7.0_01\jre"/>
-    <property name="sun.java.command" value="C:\Users\Esteban\workspace\Parchis\target\surefire\surefirebooter6471475654330467079.jar C:\Users\Esteban\workspace\Parchis\target\surefire\surefire2562100984565999103tmp C:\Users\Esteban\workspace\Parchis\target\surefire\surefire9127351944128233314tmp"/>
+    <property name="sun.java.command" value="C:\Users\Esteban\workspace\Parchis\target\surefire\surefirebooter4522843883239382602.jar C:\Users\Esteban\workspace\Parchis\target\surefire\surefire6509931953078052308tmp C:\Users\Esteban\workspace\Parchis\target\surefire\surefire900672871767776509tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0" classname="parchis.DadoTest" name="testTirarDado"/>
+  <testcase time="0.002" classname="parchis.DadoTest" name="testTirarDado"/>
 </testsuite>
