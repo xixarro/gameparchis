@@ -64,6 +64,7 @@ public class Ficha {
 	 * @see TableroFabrica.createFichas()
 	 */
 	public Ficha(Color colorFicha) {
+		super();
 		this.colorFicha = colorFicha;
 	}
 	
@@ -86,7 +87,7 @@ public class Ficha {
 
 	public boolean estaEnCasillaSalida() {
 		
-		return this.posicion.getTipoCasilla()==TipoCasilla.PUNTO_PARTIDA;
+		return this.posicion.getTipoCasilla()==TipoCasilla.INICIO;
 		
 	}
 

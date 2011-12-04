@@ -26,17 +26,8 @@ public class FichaTest {
 		ficha.setPosicion(casillaMock);// eso lo pondria asi???
 
 		MockitoAnnotations.initMocks(this);
-
 	}
 
-	// @Test
-	// public void testFicha() {
-	// // TODO nose bien como hacer este
-	// when(colorMock.getColor()).thenReturn("rojo");
-	// Ficha fichaP = new Ficha(colorMock);
-	//
-	// assertEquals("rojo", fichaP.getColorFicha().getColor());
-	// }
 
 	@Test
 	public void testEstaEnCasillaSalida() {
@@ -53,39 +44,14 @@ public class FichaTest {
 		when(casillaMock.getTipoCasilla()).thenReturn(TipoCasilla.PASILLO);
 		assertFalse(ficha.estaEnCasillaSalida());
 
-		when(casillaMock.getTipoCasilla())
-				.thenReturn(TipoCasilla.PUNTO_PARTIDA);
-		assertTrue(ficha.estaEnCasillaSalida());
+		when(casillaMock.getTipoCasilla()).thenReturn(TipoCasilla.PUNTO_PARTIDA);
+		assertFalse(ficha.estaEnCasillaSalida());
 
 		when(casillaMock.getTipoCasilla()).thenReturn(TipoCasilla.SEGURO);
 		assertFalse(ficha.estaEnCasillaSalida());
-
-		// Casilla casillaNormal = new Casilla(TipoCasilla.NORMAL, 0);
-		// casillaNormal.ponFicha(ficha);
-		// assertFalse(ficha.estaEnCasillaSalida());
-		//
-		// Casilla casillaEntradaMeta = new Casilla(TipoCasilla.ENTRADA_META,
-		// 0);
-		// casillaEntradaMeta.ponFicha(ficha);
-		// assertFalse(ficha.estaEnCasillaSalida());
-		//
-		// Casilla casillaMeta = new Casilla(TipoCasilla.META, 0);
-		// casillaMeta.ponFicha(ficha);
-		// assertFalse(ficha.estaEnCasillaSalida());
-		//
-		// Casilla casillaPasillo = new Casilla(TipoCasilla.PASILLO, 0);
-		// casillaPasillo.ponFicha(ficha);
-		// assertFalse(ficha.estaEnCasillaSalida());
-		//
-		// Casilla casillaSeguro = new Casilla(TipoCasilla.SEGURO, 0);
-		// casillaSeguro.ponFicha(ficha);
-		// assertFalse(ficha.estaEnCasillaSalida());
-		//
-		// Casilla casillaPuntoPartida = new Casilla(TipoCasilla.PUNTO_PARTIDA,
-		// 0);
-		// casillaPuntoPartida.ponFicha(ficha);
-		// assertTrue(ficha.estaEnCasillaSalida());
-
+		
+		when(casillaMock.getTipoCasilla()).thenReturn(TipoCasilla.INICIO);
+		assertTrue(ficha.estaEnCasillaSalida());
 	}
 
 	@Test

@@ -2,6 +2,7 @@ package parchis;
 
 
 public class Main {
+
 	public static void main(String[] args) {
 		Parchis parchis = new Parchis();
 		parchis.addJugador();
@@ -10,4 +11,5 @@ public class Main {
 		parchis.addJugador();
 		parchis.jugar();
 	}
+
 }

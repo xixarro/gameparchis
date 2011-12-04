@@ -1,7 +1,6 @@
 package parchis;
 
 import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,10 +12,10 @@ public class CasillaTest {
 
 	}
 
-	@Test
-	public void testSiguientePosicion() {
-		
-	}
+//	@Test
+//	public void testSiguientePosicion() {
+//		
+//	}
 
 	@Test
 	public void testGetTipoCasilla() {

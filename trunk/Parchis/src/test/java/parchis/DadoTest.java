@@ -7,17 +7,17 @@ import org.junit.Test;
 
 public class DadoTest {
 	private Dado dado;
-	
+
 	@Before
 	public void setUp() {
-		dado=new Dado();
+		dado = new Dado();
 	}
 
 	@Test
 	public void testTirarDado() {
 		int tirada = dado.tirarDado();
-		assertTrue(tirada<6);
-		assertTrue(tirada>0);
+		assertTrue((tirada <= 6) && (tirada >= 0));
+
 	}
 
 }

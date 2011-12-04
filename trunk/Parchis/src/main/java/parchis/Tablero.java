@@ -1,6 +1,6 @@
 package parchis;
 
-import java.util.List;
+import java.util.ArrayList;
 import parchis.Casilla.TipoCasilla;
 
 /**
@@ -13,12 +13,11 @@ import parchis.Casilla.TipoCasilla;
 
 public class Tablero {
 
-	static final int CAP_FICHAS_CASILLA_META = 4;
-	static final int  CAP_FICHAS_CASILLA= 2;
-	static final int  TIRADA_COMER= 20;
-
 	private Casilla carril[];
-
+	/**
+	 * < Atributo representa el carril principal de Casillas consecutivas hasta
+	 * la meta
+	 */
 	private Casilla pasilloAmarillo[];
 	private Casilla pasilloAzul[];
 	private Casilla pasilloRojo[];
@@ -34,10 +33,10 @@ public class Tablero {
 	private Casilla metaRoja;
 	private Casilla metaVerde;
 
-	private List<Ficha> fichasAmarillas;
-	private List<Ficha> fichasAzules;
-	private List<Ficha> fichasRojas;
-	private List<Ficha> fichasVerdes;
+	private ArrayList<Ficha> fichasAmarillas;
+	private ArrayList<Ficha> fichasAzules;
+	private ArrayList<Ficha> fichasRojas;
+	private ArrayList<Ficha> fichasVerdes;
 
 	static final Color AMARILLO = new Color("amarillo");
 	static final Color VERDE = new Color("verde");
@@ -152,35 +151,35 @@ public class Tablero {
 		this.metaVerde = metaVerde;
 	}
 
-	public List<Ficha> getFichasAmarillas() {
+	public ArrayList<Ficha> getFichasAmarillas() {
 		return fichasAmarillas;
 	}
 
-	public void setFichasAmarillas(List<Ficha> fichasAmarillas) {
+	public void setFichasAmarillas(ArrayList<Ficha> fichasAmarillas) {
 		this.fichasAmarillas = fichasAmarillas;
 	}
 
-	public List<Ficha> getFichasAzules() {
+	public ArrayList<Ficha> getFichasAzules() {
 		return fichasAzules;
 	}
 
-	public void setFichasAzules(List<Ficha> fichasAzules) {
+	public void setFichasAzules(ArrayList<Ficha> fichasAzules) {
 		this.fichasAzules = fichasAzules;
 	}
 
-	public List<Ficha> getFichasRojas() {
+	public ArrayList<Ficha> getFichasRojas() {
 		return fichasRojas;
 	}
 
-	public void setFichasRojas(List<Ficha> fichasRojas) {
+	public void setFichasRojas(ArrayList<Ficha> fichasRojas) {
 		this.fichasRojas = fichasRojas;
 	}
 
-	public List<Ficha> getFichasVerdes() {
+	public ArrayList<Ficha> getFichasVerdes() {
 		return fichasVerdes;
 	}
 
-	public void setFichasVerdes(List<Ficha> fichasVerdes) {
+	public void setFichasVerdes(ArrayList<Ficha> fichasVerdes) {
 		this.fichasVerdes = fichasVerdes;
 	}
 
@@ -215,30 +214,26 @@ public class Tablero {
 	public void setSalidaVerde(Casilla salidaVerde) {
 		this.salidaVerde = salidaVerde;
 	}
-	
-	/**
-	 * TODO todos settes hay que hacerle el clone??
-	 * @param pasilloAmarillo
-	 */
+
 	public void setPasilloAmarillo(Casilla[] pasilloAmarillo) {
-		this.pasilloAmarillo = pasilloAmarillo.clone();
+		this.pasilloAmarillo = pasilloAmarillo;
 	}
 
 	public void setPasilloAzul(Casilla[] pasilloAzul) {
-		this.pasilloAzul = pasilloAzul.clone();
+		this.pasilloAzul = pasilloAzul;
 	}
 
 	public void setPasilloRojo(Casilla[] pasilloRojo) {
-		this.pasilloRojo = pasilloRojo.clone();
+		this.pasilloRojo = pasilloRojo;
 	}
 
 	public void setPasilloVerde(Casilla[] pasilloVerde) {
-		this.pasilloVerde = pasilloVerde.clone();
+		this.pasilloVerde = pasilloVerde;
 	}
 
-	 public void setCarril(Casilla[] carril) {
-	 this.carril = carril.clone();
-	 }
+	public void setCarril(Casilla[] carril) {
+		this.carril = carril;
+	}
 
 	public void ponerfichaEnPosicion(Ficha ficha, int posicion) {
 
@@ -334,33 +329,36 @@ public class Tablero {
 
 	public boolean cabeEnDestino(Ficha ficha, int tirada) {
 
-		boolean cabe = false;
+		boolean b = false;
 
 		Casilla casillaDestino = calculaDestino(ficha, tirada);
 
 		if (casillaDestino.getTipoCasilla() == TipoCasilla.META) {
-			cabe = casillaDestino.getFichas().size() < CAP_FICHAS_CASILLA_META;
+			b = casillaDestino.getFichas().size() < 4;
 		} else {
-			cabe = casillaDestino.getFichas().size() < 2;
+			b = casillaDestino.getFichas().size() < 2;
 		}
-		return cabe;
+		return b;
 	}
 
 	public Ficha elegirFichaDesplazable(Jugador jugador, int tirada) {
 		Ficha f = null;
-		List<Ficha> fichas = jugador.getFichas();
+		ArrayList<Ficha> fichas = jugador.getFichas();
 
-		if (jugador.todasEnSalida()) {
+		if (jugador.TodasEnSalida()) {
 			f = null;
 		} else {
 			for (Ficha ficha : fichas) {
 				if (!ficha.estaEnCasillaSalida() && !ficha.estaEnCasillaMeta()) {
 					Casilla casillaDestino = calculaDestino(ficha, tirada);
-					if (casillaDestino != null
-							&& !tienePuentesEnMedio(ficha, tirada)
-							&& cabeEnDestino(ficha, tirada)) {
-						System.out.println(ficha.toString());
-						f = ficha;
+					if (casillaDestino != null) {
+						if (!tienePuentesEnMedio(ficha, tirada)) {
+							if (cabeEnDestino(ficha, tirada)) {
+								System.out.println(ficha.toString());
+								f = ficha;
+							}
+
+						}
 					}
 				}
 			}
@@ -372,13 +370,13 @@ public class Tablero {
 
 	public void comer(Ficha ficha) {
 		Casilla casilla = ficha.getPosicion();
-		Ficha fichaCompanera = null;
+		Ficha fichaCompañera = null;
 		for (Ficha fichaCasilla : casilla.getFichas()) {
 			if (fichaCasilla.getColorFicha() != ficha.getColorFicha()) {
-				fichaCompanera = fichaCasilla;
+				fichaCompañera = fichaCasilla;
 			}
 		}
-		moverFichaACasa(fichaCompanera);
+		moverFichaACasa(fichaCompañera);
 	}
 
 	public void moverFicha(Ficha ficha, int tirada) {
@@ -406,11 +404,9 @@ public class Tablero {
 			moverFicha(ficha, tirada);
 			if (ficha.come()) {
 				comer(ficha);
-				eligeFichaYMueve(jugador, TIRADA_COMER);
+				eligeFichaYMueve(jugador, 20);
 			}
 		}
 
 	}
-
-	
 }
