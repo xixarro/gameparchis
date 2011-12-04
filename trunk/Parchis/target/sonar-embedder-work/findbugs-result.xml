@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="http://findbugs.sourceforge.net/xsl/default.xsl"?>
 
-<BugCollection version="1.3.9" sequence="0" timestamp="1322972576068" analysisTimestamp="1322972581855" release="">
+<BugCollection version="1.3.9" sequence="0" timestamp="1323023865808" analysisTimestamp="1323023957150" release="">
   <Project>
     <Jar>C:\Users\Esteban\workspace\Parchis\target\classes</Jar>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\target\test-classes</AuxClasspathEntry>
@@ -18,24 +18,24 @@
     <AuxClasspathEntry>C:\Program Files\Java\jre7\lib\ext\zipfs.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\lib\junit-4.10.jar</AuxClasspathEntry>
     <AuxClasspathEntry>C:\Users\Esteban\workspace\Parchis\lib\mockito-all-1.9.0-rc1.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs8814600733353665281.jar</AuxClasspathEntry>
-    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs8835789183848643247.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs999432851230310696.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Esteban\AppData\Local\Temp\findbugs223056176127510317.jar</AuxClasspathEntry>
     <SrcDir>C:\Users\Esteban\workspace\Parchis\src\main\java</SrcDir>
     <SrcDir>C:\Users\Esteban\workspace\Parchis\src\test\java</SrcDir>
     <WrkDir>C:\Users\Esteban\workspace\Parchis\target\sonar-embedder-work\target</WrkDir>
   </Project>
-  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="4034b67e40694f4d8ac40b891ccdf305" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="f4566b65e7ee281f3224798f6a0dcca7" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Null pointer dereference</ShortMessage>
-    <LongMessage>Null pointer dereference of System.out in parchis.Parchis.fin()</LongMessage>
-    <Class classname="parchis.Parchis" primary="true">
-      <SourceLine classname="parchis.Parchis" start="20" end="157" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java">
-        <Message>At Parchis.java:[lines 20-157]</Message>
+    <LongMessage>Null pointer dereference of System.out in parchis.UI.imprimeJugadorActual(Jugador)</LongMessage>
+    <Class classname="parchis.UI" primary="true">
+      <SourceLine classname="parchis.UI" start="3" end="14" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java">
+        <Message>At UI.java:[lines 3-14]</Message>
       </SourceLine>
-      <Message>In class parchis.Parchis</Message>
+      <Message>In class parchis.UI</Message>
     </Class>
-    <Method classname="parchis.Parchis" name="fin" signature="()Z" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Parchis" start="141" end="157" startBytecode="0" endBytecode="360" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java"/>
-      <Message>In method parchis.Parchis.fin()</Message>
+    <Method classname="parchis.UI" name="imprimeJugadorActual" signature="(Lparchis/Jugador;)V" isStatic="true" primary="true">
+      <SourceLine classname="parchis.UI" start="6" end="7" startBytecode="0" endBytecode="71" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java"/>
+      <Message>In method parchis.UI.imprimeJugadorActual(Jugador)</Message>
     </Method>
     <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
       <SourceLine classname="java.lang.System">
@@ -43,22 +43,22 @@
       </SourceLine>
       <Message>Value loaded from field java.lang.System.out</Message>
     </Field>
-    <SourceLine classname="parchis.Parchis" primary="true" start="147" end="147" startBytecode="112" endBytecode="112" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Parchis.java:[line 147]</Message>
+    <SourceLine classname="parchis.UI" primary="true" start="6" end="6" startBytecode="22" endBytecode="22" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at UI.java:[line 6]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="fcd315f0aa359517c510b42d00a9bda" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="ac758fba2edb1e9c0443f238e53796f9" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Null pointer dereference</ShortMessage>
-    <LongMessage>Null pointer dereference of System.out in parchis.Parchis.jugar()</LongMessage>
-    <Class classname="parchis.Parchis" primary="true">
-      <SourceLine classname="parchis.Parchis" start="20" end="157" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java">
-        <Message>At Parchis.java:[lines 20-157]</Message>
+    <LongMessage>Null pointer dereference of System.out in parchis.UI.mostrar(Object)</LongMessage>
+    <Class classname="parchis.UI" primary="true">
+      <SourceLine classname="parchis.UI" start="3" end="14" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java">
+        <Message>At UI.java:[lines 3-14]</Message>
       </SourceLine>
-      <Message>In class parchis.Parchis</Message>
+      <Message>In class parchis.UI</Message>
     </Class>
-    <Method classname="parchis.Parchis" name="jugar" signature="()V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Parchis" start="76" end="99" startBytecode="0" endBytecode="258" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java"/>
-      <Message>In method parchis.Parchis.jugar()</Message>
+    <Method classname="parchis.UI" name="mostrar" signature="(Ljava/lang/Object;)V" isStatic="true" primary="true">
+      <SourceLine classname="parchis.UI" start="13" end="14" startBytecode="0" endBytecode="56" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java"/>
+      <Message>In method parchis.UI.mostrar(Object)</Message>
     </Method>
     <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
       <SourceLine classname="java.lang.System">
@@ -66,22 +66,22 @@
       </SourceLine>
       <Message>Value loaded from field java.lang.System.out</Message>
     </Field>
-    <SourceLine classname="parchis.Parchis" primary="true" start="82" end="82" startBytecode="47" endBytecode="47" sourcefile="Parchis.java" sourcepath="parchis/Parchis.java" relSourcepath="main\java\parchis\Parchis.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Parchis.java:[line 82]</Message>
+    <SourceLine classname="parchis.UI" primary="true" start="13" end="13" startBytecode="7" endBytecode="7" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at UI.java:[line 13]</Message>
     </SourceLine>
   </BugInstance>
-  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="b7cf051441363013198b1626cc7a63df" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
+  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="fd359f7ebe79a6e2b9f6aa35825b7620" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
     <ShortMessage>Null pointer dereference</ShortMessage>
-    <LongMessage>Null pointer dereference of System.out in parchis.Tablero.elegirFichaDesplazable(Jugador, int)</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="439" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-439]</Message>
+    <LongMessage>Null pointer dereference of System.out in parchis.UI.mostrar(String, Object)</LongMessage>
+    <Class classname="parchis.UI" primary="true">
+      <SourceLine classname="parchis.UI" start="3" end="14" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java">
+        <Message>At UI.java:[lines 3-14]</Message>
       </SourceLine>
-      <Message>In class parchis.Tablero</Message>
+      <Message>In class parchis.UI</Message>
     </Class>
-    <Method classname="parchis.Tablero" name="elegirFichaDesplazable" signature="(Lparchis/Jugador;I)Lparchis/Ficha;" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="374" end="393" startBytecode="0" endBytecode="355" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.elegirFichaDesplazable(Jugador, int)</Message>
+    <Method classname="parchis.UI" name="mostrar" signature="(Ljava/lang/String;Ljava/lang/Object;)V" isStatic="true" primary="true">
+      <SourceLine classname="parchis.UI" start="10" end="12" startBytecode="0" endBytecode="83" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java"/>
+      <Message>In method parchis.UI.mostrar(String, Object)</Message>
     </Method>
     <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
       <SourceLine classname="java.lang.System">
@@ -89,31 +89,8 @@
       </SourceLine>
       <Message>Value loaded from field java.lang.System.out</Message>
     </Field>
-    <SourceLine classname="parchis.Tablero" primary="true" start="386" end="386" startBytecode="102" endBytecode="102" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Tablero.java:[line 386]</Message>
-    </SourceLine>
-  </BugInstance>
-  <BugInstance type="NP_ALWAYS_NULL" priority="1" abbrev="NP" category="CORRECTNESS" instanceHash="d1535c322afa97e9019437e1957fd814" instanceOccurrenceNum="0" instanceOccurrenceMax="0">
-    <ShortMessage>Null pointer dereference</ShortMessage>
-    <LongMessage>Null pointer dereference of System.out in parchis.Tablero.eligeFichaYMueve(Jugador, int)</LongMessage>
-    <Class classname="parchis.Tablero" primary="true">
-      <SourceLine classname="parchis.Tablero" start="15" end="439" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java">
-        <Message>At Tablero.java:[lines 15-439]</Message>
-      </SourceLine>
-      <Message>In class parchis.Tablero</Message>
-    </Class>
-    <Method classname="parchis.Tablero" name="eligeFichaYMueve" signature="(Lparchis/Jugador;I)V" isStatic="false" primary="true">
-      <SourceLine classname="parchis.Tablero" start="428" end="439" startBytecode="0" endBytecode="163" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java"/>
-      <Message>In method parchis.Tablero.eligeFichaYMueve(Jugador, int)</Message>
-    </Method>
-    <Field classname="java.lang.System" name="out" signature="Ljava/io/PrintStream;" isStatic="true" role="FIELD_VALUE_OF">
-      <SourceLine classname="java.lang.System">
-        <Message>In &lt;Unknown&gt;</Message>
-      </SourceLine>
-      <Message>Value loaded from field java.lang.System.out</Message>
-    </Field>
-    <SourceLine classname="parchis.Tablero" primary="true" start="430" end="430" startBytecode="17" endBytecode="17" sourcefile="Tablero.java" sourcepath="parchis/Tablero.java" relSourcepath="main\java\parchis\Tablero.java" role="SOURCE_LINE_DEREF">
-      <Message>Dereferenced at Tablero.java:[line 430]</Message>
+    <SourceLine classname="parchis.UI" primary="true" start="10" end="10" startBytecode="24" endBytecode="24" sourcefile="UI.java" sourcepath="parchis/UI.java" relSourcepath="main\java\parchis\UI.java" role="SOURCE_LINE_DEREF">
+      <Message>Dereferenced at UI.java:[line 10]</Message>
     </SourceLine>
   </BugInstance>
   <BugCategory category="CORRECTNESS">
@@ -132,17 +109,18 @@
     <Description>Null pointer dereference</Description>
   </BugCode>
   <Errors errors="0" missingClasses="0"></Errors>
-  <FindBugsSummary timestamp="Sun, 4 Dec 2011 05:22:56 +0100" total_classes="10" referenced_classes="37" total_bugs="4" total_size="784" num_packages="1" vm_version="20.4-b02" cpu_seconds="1.26" clock_seconds="1.25" peak_mbytes="334.68" alloc_mbytes="494.94" gc_seconds="0.12" priority_1="4">
+  <FindBugsSummary timestamp="Sun, 4 Dec 2011 19:37:45 +0100" total_classes="11" referenced_classes="38" total_bugs="3" total_size="795" num_packages="1" vm_version="20.4-b02" cpu_seconds="1.64" clock_seconds="1.65" peak_mbytes="260.79" alloc_mbytes="494.94" gc_seconds="0.14" priority_1="3">
     <FileStats path="parchis/Casilla.java" bugCount="0" size="71"/>
     <FileStats path="parchis/Color.java" bugCount="0" size="32"/>
     <FileStats path="parchis/Dado.java" bugCount="0" size="8"/>
     <FileStats path="parchis/Ficha.java" bugCount="0" size="44"/>
     <FileStats path="parchis/Jugador.java" bugCount="0" size="74"/>
     <FileStats path="parchis/Main.java" bugCount="0" size="11"/>
-    <FileStats path="parchis/Parchis.java" bugCount="2" size="85" bugHash="5b15a8afab179cd31aa44dd5fd83b0aa"/>
-    <FileStats path="parchis/Tablero.java" bugCount="2" size="272" bugHash="0dbe695fd44e73a2ebe77d5309f7e99c"/>
+    <FileStats path="parchis/Parchis.java" bugCount="0" size="84"/>
+    <FileStats path="parchis/Tablero.java" bugCount="0" size="272"/>
     <FileStats path="parchis/TableroFabrica.java" bugCount="0" size="187"/>
-    <PackageStats package="parchis" total_bugs="4" total_types="10" total_size="784" priority_1="4">
+    <FileStats path="parchis/UI.java" bugCount="3" size="12" bugHash="0c6e96986cbe3f8a910ecf50cd63a4ee"/>
+    <PackageStats package="parchis" total_bugs="3" total_types="11" total_size="795" priority_1="3">
       <ClassStats class="parchis.Casilla" sourceFile="Casilla.java" interface="false" size="48" bugs="0"/>
       <ClassStats class="parchis.Casilla$TipoCasilla" sourceFile="Casilla.java" interface="false" size="23" bugs="0"/>
       <ClassStats class="parchis.Color" sourceFile="Color.java" interface="false" size="32" bugs="0"/>
@@ -150,28 +128,30 @@
       <ClassStats class="parchis.Ficha" sourceFile="Ficha.java" interface="false" size="44" bugs="0"/>
       <ClassStats class="parchis.Jugador" sourceFile="Jugador.java" interface="false" size="74" bugs="0"/>
       <ClassStats class="parchis.Main" sourceFile="Main.java" interface="false" size="11" bugs="0"/>
-      <ClassStats class="parchis.Parchis" sourceFile="Parchis.java" interface="false" size="85" bugs="2" priority_1="2"/>
-      <ClassStats class="parchis.Tablero" sourceFile="Tablero.java" interface="false" size="272" bugs="2" priority_1="2"/>
+      <ClassStats class="parchis.Parchis" sourceFile="Parchis.java" interface="false" size="84" bugs="0"/>
+      <ClassStats class="parchis.Tablero" sourceFile="Tablero.java" interface="false" size="272" bugs="0"/>
       <ClassStats class="parchis.TableroFabrica" sourceFile="TableroFabrica.java" interface="false" size="187" bugs="0"/>
+      <ClassStats class="parchis.UI" sourceFile="UI.java" interface="false" size="12" bugs="3" priority_1="3"/>
     </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="11" invocations="112" avgMicrosecondsPerInvocation="99" maxMicrosecondsPerInvocation="1187" standardDeviationMircosecondsPerInvocation="136"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="15" invocations="37" avgMicrosecondsPerInvocation="416" maxMicrosecondsPerInvocation="2653" standardDeviationMircosecondsPerInvocation="591"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="16" invocations="112" avgMicrosecondsPerInvocation="146" maxMicrosecondsPerInvocation="1186" standardDeviationMircosecondsPerInvocation="152"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="21" invocations="112" avgMicrosecondsPerInvocation="189" maxMicrosecondsPerInvocation="1734" standardDeviationMircosecondsPerInvocation="227"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="22" invocations="112" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="2076" standardDeviationMircosecondsPerInvocation="266"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="25" invocations="37" avgMicrosecondsPerInvocation="681" maxMicrosecondsPerInvocation="4153" standardDeviationMircosecondsPerInvocation="1015"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="34" invocations="68" avgMicrosecondsPerInvocation="508" maxMicrosecondsPerInvocation="5024" standardDeviationMircosecondsPerInvocation="658"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="42" invocations="324" avgMicrosecondsPerInvocation="132" maxMicrosecondsPerInvocation="527" standardDeviationMircosecondsPerInvocation="45"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="43" invocations="322" avgMicrosecondsPerInvocation="135" maxMicrosecondsPerInvocation="1273" standardDeviationMircosecondsPerInvocation="185"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="112" avgMicrosecondsPerInvocation="392" maxMicrosecondsPerInvocation="5404" standardDeviationMircosecondsPerInvocation="592"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ClassContextClassAnalysisEngine" totalMilliseconds="44" invocations="45" avgMicrosecondsPerInvocation="979" maxMicrosecondsPerInvocation="43697" standardDeviationMircosecondsPerInvocation="6439"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="54" invocations="15" avgMicrosecondsPerInvocation="3666" maxMicrosecondsPerInvocation="51455" standardDeviationMircosecondsPerInvocation="12772"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="63" invocations="789" avgMicrosecondsPerInvocation="80" maxMicrosecondsPerInvocation="33997" standardDeviationMircosecondsPerInvocation="1209"/>
-      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="66" invocations="112" avgMicrosecondsPerInvocation="596" maxMicrosecondsPerInvocation="8441" standardDeviationMircosecondsPerInvocation="968"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="68" invocations="112" avgMicrosecondsPerInvocation="608" maxMicrosecondsPerInvocation="8314" standardDeviationMircosecondsPerInvocation="934"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="80" invocations="112" avgMicrosecondsPerInvocation="718" maxMicrosecondsPerInvocation="10786" standardDeviationMircosecondsPerInvocation="1215"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="134" invocations="149" avgMicrosecondsPerInvocation="901" maxMicrosecondsPerInvocation="44857" standardDeviationMircosecondsPerInvocation="3747"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="11" invocations="116" avgMicrosecondsPerInvocation="102" maxMicrosecondsPerInvocation="1181" standardDeviationMircosecondsPerInvocation="133"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="15" invocations="38" avgMicrosecondsPerInvocation="404" maxMicrosecondsPerInvocation="5853" standardDeviationMircosecondsPerInvocation="958"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="17" invocations="38" avgMicrosecondsPerInvocation="456" maxMicrosecondsPerInvocation="2786" standardDeviationMircosecondsPerInvocation="620"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SynchronizeAndNullCheckField" totalMilliseconds="17" invocations="11" avgMicrosecondsPerInvocation="1634" maxMicrosecondsPerInvocation="16334" standardDeviationMircosecondsPerInvocation="4650"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="21" invocations="116" avgMicrosecondsPerInvocation="184" maxMicrosecondsPerInvocation="1428" standardDeviationMircosecondsPerInvocation="171"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="22" invocations="116" avgMicrosecondsPerInvocation="198" maxMicrosecondsPerInvocation="2064" standardDeviationMircosecondsPerInvocation="259"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="30" invocations="116" avgMicrosecondsPerInvocation="261" maxMicrosecondsPerInvocation="3074" standardDeviationMircosecondsPerInvocation="369"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="32" invocations="38" avgMicrosecondsPerInvocation="866" maxMicrosecondsPerInvocation="4333" standardDeviationMircosecondsPerInvocation="1233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="37" invocations="797" avgMicrosecondsPerInvocation="46" maxMicrosecondsPerInvocation="727" standardDeviationMircosecondsPerInvocation="63"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="46" invocations="72" avgMicrosecondsPerInvocation="639" maxMicrosecondsPerInvocation="6125" standardDeviationMircosecondsPerInvocation="999"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="51" invocations="326" avgMicrosecondsPerInvocation="158" maxMicrosecondsPerInvocation="1047" standardDeviationMircosecondsPerInvocation="75"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="61" invocations="15" avgMicrosecondsPerInvocation="4111" maxMicrosecondsPerInvocation="57648" standardDeviationMircosecondsPerInvocation="14308"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="77" invocations="116" avgMicrosecondsPerInvocation="664" maxMicrosecondsPerInvocation="13705" standardDeviationMircosecondsPerInvocation="1579"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="84" invocations="324" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="34709" standardDeviationMircosecondsPerInvocation="1931"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="99" invocations="116" avgMicrosecondsPerInvocation="855" maxMicrosecondsPerInvocation="8834" standardDeviationMircosecondsPerInvocation="1265"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="102" invocations="116" avgMicrosecondsPerInvocation="880" maxMicrosecondsPerInvocation="12801" standardDeviationMircosecondsPerInvocation="1465"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="153" invocations="154" avgMicrosecondsPerInvocation="996" maxMicrosecondsPerInvocation="44458" standardDeviationMircosecondsPerInvocation="3727"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="163" invocations="116" avgMicrosecondsPerInvocation="1408" maxMicrosecondsPerInvocation="41946" standardDeviationMircosecondsPerInvocation="5049"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

@@ -2,6 +2,7 @@ package parchis;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @brief Representa una partida de Parchís.
@@ -12,7 +13,11 @@ import java.util.Iterator;
  */
 public class Parchis {
 	
-	private ArrayList<Jugador> jugadores;
+	private static final int TRES = 3;
+	private static final int CUATRO = 4;
+	private static final int CINCO = 5;
+	private static final int SEIS = 6;
+	private List<Jugador> jugadores;
 	private Tablero tablero;
 	private Iterator<Jugador> itj;
 	
@@ -48,7 +53,7 @@ public class Parchis {
 		case 2:
 			jugador = new Jugador(this.tablero.getFichasRojas());
 			break;
-		case 3:
+		case TRES:
 			jugador = new Jugador(this.tablero.getFichasVerdes());
 			break;
 		default:
@@ -78,14 +83,15 @@ public class Parchis {
 		
 		
 		while (!fin()) {
-			System.out
-					.println("Truno del Jugador: " + jugadorActual.getColor());
+			//UI.imprimeJugadorActual(jugadorActual);
+			UI.mostrar("Truno del Jugador: " , jugadorActual.getColor());
+			//System.out.println("Truno del Jugador: " + jugadorActual.getColor());
 			tirada = new Dado().tirarDado();
 			switch (tirada) {
-			case 5:
+			case CINCO:
 				esCinco();
 				break;
-			case 6:
+			case SEIS:
 				esSeis();
 				break;
 			default:
@@ -109,7 +115,7 @@ public class Parchis {
 	private void esCinco(){
 		if ((jugadorActual.getNumeroDeFichasEnSalida()) == 0) {
 			tablero.eligeFichaYMueve(jugadorActual, tirada);
-		} else if (jugadorActual.getNumeroDeFichasEnSalida() == 4) {
+		} else if (jugadorActual.getNumeroDeFichasEnSalida() == CUATRO) {
 			tablero.colocarDosFichasEnPuntoPartida(jugadorActual);
 		} else {
 			if (!jugadorActual.tieneDosFichasEnPP()) {
@@ -125,7 +131,7 @@ public class Parchis {
 	
 	private void esSeis(){
 		numeroDeSeis++;
-		if (numeroDeSeis < 3) {
+		if (numeroDeSeis < TRES) {
 			if (!jugadorActual.tieneFichaEnCasillaSalida()) {
 				tirada++;
 			}
@@ -139,19 +145,15 @@ public class Parchis {
 	
 	private boolean fin() {
 		boolean fin = false;
-		if ((tablero.getMetaAmarilla().getFichas().size() == 4)
-				|| (tablero.getMetaAzul().getFichas().size() == 4)
-				|| (tablero.getMetaRoja().getFichas().size() == 4)
-				|| (tablero.getMetaVerde().getFichas().size() == 4)) {
+		if ((tablero.getMetaAmarilla().getFichas().size() == CUATRO)
+				|| (tablero.getMetaAzul().getFichas().size() == CUATRO)
+				|| (tablero.getMetaRoja().getFichas().size() == CUATRO)
+				|| (tablero.getMetaVerde().getFichas().size() == CUATRO)) {
 			fin = true;
-			System.out.println("Amarillo: "
-					+ jugadores.get(0).getFichas());
-			System.out.println("Azul: "
-					+ jugadores.get(1).getFichas());
-			System.out.println("Rojo: "
-					+ jugadores.get(2).getFichas());
-			System.out.println("Verde: "
-					+ jugadores.get(3).getFichas());
+			UI.mostrar("Amarillo: ", jugadores.get(0).getFichas());
+			UI.mostrar("Azul: "	, jugadores.get(1).getFichas());
+			UI.mostrar("Rojo: ", jugadores.get(2).getFichas());
+			UI.mostrar("Verde: ", jugadores.get(TRES).getFichas());
 		}
 	
 		return fin;

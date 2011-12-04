@@ -383,12 +383,11 @@ public class Tablero {
 					if (casillaDestino != null
 							&& !tienePuentesEnMedio(ficha, tirada)
 							&& cabeEnDestino(ficha, tirada)) {
-						System.out.println(ficha.toString());
+						UI.mostrar(ficha);
 						f = ficha;
 					}
 				}
 			}
-
 		}
 		return f;
 
@@ -427,7 +426,7 @@ public class Tablero {
 	public void eligeFichaYMueve(Jugador jugador, int tirada) {
 		Ficha ficha = elegirFichaDesplazable(jugador, tirada);
 		if (ficha == null) {
-			System.out.println("No puede desplazarse");
+			UI.mostrar("no puede desplazarse");
 		} else {
 			moverFicha(ficha, tirada);
 			if (ficha.come()) {
