@@ -66,6 +66,7 @@ public class Ficha {
 	public Ficha(Color colorFicha) {
 		super();
 		this.colorFicha = colorFicha;
+		this.posicion=null;
 	}
 	
 	/**
